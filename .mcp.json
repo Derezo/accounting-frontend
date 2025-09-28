@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "accounting-mcp-server": {
+      "command": "node",
+      "args": ["/home/eric/Projects/accounting-mcp-server/dist/index.js"],
+      "cwd": "/home/eric/Projects/accounting-mcp-server"
+    }
+  }
+}
