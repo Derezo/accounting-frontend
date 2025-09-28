@@ -81,8 +81,13 @@ class AuthService {
   }
 
   async getCurrentUser(): Promise<User> {
-    const response = await axios.get<User>(`${this.baseURL}/auth/me`)
-    return response.data
+    const tokens = this.getStoredTokens()
+    const response = await axios.get<{ user: User }>(`${this.baseURL}/auth/profile`, {
+      headers: {
+        Authorization: `Bearer ${tokens?.accessToken}`
+      }
+    })
+    return response.data.user
   }
 
   async verifyEmail(token: string): Promise<void> {
@@ -99,8 +104,15 @@ class AuthService {
 
   // Token management
   getStoredTokens() {
-    const tokens = localStorage.getItem('auth_tokens')
-    return tokens ? JSON.parse(tokens) : null
+    try {
+      const tokens = localStorage.getItem('auth_tokens')
+      return tokens ? JSON.parse(tokens) : null
+    } catch (error) {
+      // Handle corrupted JSON in localStorage
+      console.warn('Corrupted auth tokens in localStorage, clearing them')
+      this.removeStoredTokens()
+      return null
+    }
   }
 
   setStoredTokens(tokens: any) {

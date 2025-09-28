@@ -1,0 +1,3532 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="235" failures="98" errors="0" time="27.562872683">
+    <testsuite name="src/__tests__/api-service-validation.test.ts" timestamp="2025-09-28T11:54:28.277Z" hostname="tiamat" tests="19" failures="19" errors="0" skipped="0" time="0.013027231">
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService class should be instantiable" time="0.0040024">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService should have all required customer methods" time="0.000285472">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService should have all required quote methods" time="0.000195468">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService should have all required invoice methods" time="0.000149616">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService should have all required payment methods" time="0.000158722">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService should have all required project methods" time="0.000134159">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService should have all required employee methods" time="0.000135789">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Structure Validation &gt; APIService should have all required analytics methods" time="0.000131192">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:32:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Method Signatures &gt; Customer methods should have correct signatures" time="0.000198805">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:142:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Method Signatures &gt; Quote methods should have correct signatures" time="0.000230905">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:142:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Method Signatures &gt; Invoice methods should have correct signatures" time="0.000158282">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:142:18
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Duplicate Detection &gt; Should not have duplicate method definitions" time="0.000268646">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:193:24
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Duplicate Detection &gt; Method names should follow consistent naming conventions" time="0.00021922">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:205:24
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Error Handling &gt; Methods should handle missing parameters gracefully" time="0.000186706">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:248:24
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Error Handling &gt; Create methods should validate required fields" time="0.000155042">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:259:24
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Type Safety &gt; Return types should be consistent" time="0.000152728">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:272:24
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Type Safety &gt; Paginated methods should accept pagination parameters" time="0.000151935">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:282:24
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Integration Points &gt; Should work with authentication" time="0.003131773">
+            <failure message="expected [Function] to not throw an error but &apos;TypeError: APIService…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;TypeError: APIService…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;TypeError: __vi_import_0__.APIService is not a constructor&quot;
+
+ ❯ src/__tests__/api-service-validation.test.ts:299:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/api-service-validation.test.ts" name="API Service Integration Points &gt; Should handle network errors gracefully" time="0.00021423">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/api-service-validation.test.ts:304:24
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/build-validation.test.ts" timestamp="2025-09-28T11:54:28.288Z" hostname="tiamat" tests="6" failures="2" errors="0" skipped="0" time="17.971779962">
+        <testcase classname="src/__tests__/build-validation.test.ts" name="Build Validation &gt; TypeScript compilation should succeed" time="0.11190875">
+        </testcase>
+        <testcase classname="src/__tests__/build-validation.test.ts" name="Build Validation &gt; Production build should succeed" time="8.735629674">
+            <failure message="expected [Function] to not throw an error but &apos;Error: Command failed: npm run build&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: Command failed: npm run build&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: Command failed: npm run build&quot;
+
+ ❯ src/__tests__/build-validation.test.ts:31:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/build-validation.test.ts" name="Build Validation &gt; ESLint should pass without errors" time="2.590368698">
+            <failure message="expected [Function] to not throw an error but &apos;Error: Command failed: npm run lint&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: Command failed: npm run lint&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: Command failed: npm run lint&quot;
+
+ ❯ src/__tests__/build-validation.test.ts:41:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/build-validation.test.ts" name="Build Validation &gt; Package.json dependencies should be installable" time="0.000537874">
+        </testcase>
+        <testcase classname="src/__tests__/build-validation.test.ts" name="Build Validation &gt; Vite configuration should be valid" time="6.53123456">
+        </testcase>
+        <testcase classname="src/__tests__/build-validation.test.ts" name="Build Validation &gt; TypeScript configuration should be valid" time="0.000155331">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/critical-imports.test.ts" timestamp="2025-09-28T11:54:28.288Z" hostname="tiamat" tests="12" failures="2" errors="0" skipped="0" time="2.553232618">
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; AuditPage should have proper default export" time="0.833384442">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Radix UI scroll area should be available" time="0.000233323">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Recharts should be available for analytics" time="0.000290297">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Critical hooks should be available" time="0.030403381">
+            <system-err>
+useLoadingStates hook not found: expected undefined to be defined
+
+            </system-err>
+            <failure message="useAPI hook import failed: expected undefined to be defined" type="Error">
+Error: useAPI hook import failed: expected undefined to be defined
+ ❯ src/__tests__/critical-imports.test.ts:80:13
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Form components should be available" time="0.036686587">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; UI components should be available" time="0.000353792">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Service modules should not have duplicate methods" time="0.000276085">
+            <failure message="APIService validation failed: APIService is not a constructor" type="Error">
+Error: APIService validation failed: APIService is not a constructor
+ ❯ src/__tests__/critical-imports.test.ts:159:13
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Type definitions should not have conflicts" time="0.00606317">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Store modules should be properly configured" time="0.000325777">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Path aliases should resolve correctly" time="1.599015747">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; Financial calculation utilities should be available" time="0.000382061">
+        </testcase>
+        <testcase classname="src/__tests__/critical-imports.test.ts" name="Critical Import Validation &gt; PDF generation dependencies should work" time="0.042078309">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/dependency-validation.test.ts" timestamp="2025-09-28T11:54:28.289Z" hostname="tiamat" tests="18" failures="0" errors="0" skipped="0" time="0.666706477">
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Validation &gt; All critical production dependencies should be installed" time="0.00061466">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Validation &gt; All UI framework dependencies should be installed" time="0.000098207">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Validation &gt; Chart and visualization dependencies should be installed" time="0.000120994">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Validation &gt; PDF generation dependencies should be installed" time="0.000071026">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Validation &gt; Development and testing dependencies should be installed" time="0.000055659">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Validation &gt; Date and utility dependencies should be installed" time="0.000052953">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Version Compatibility &gt; React versions should be compatible" time="0.000396173">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Version Compatibility &gt; Testing library versions should be compatible with React" time="0.000134635">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Dependency Version Compatibility &gt; TypeScript should be compatible with React" time="0.000080878">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Module Resolution Tests &gt; Core React modules should be resolvable" time="0.014689638">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Module Resolution Tests &gt; State management modules should be resolvable" time="0.010312974">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Module Resolution Tests &gt; Form handling modules should be resolvable" time="0.017216444">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Module Resolution Tests &gt; UI component modules should be resolvable" time="0.058817851">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Module Resolution Tests &gt; Chart and visualization modules should be resolvable" time="0.094102769">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Module Resolution Tests &gt; Utility modules should be resolvable" time="0.467192813">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Environment Dependencies &gt; Node.js environment should support required features" time="0.000168461">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Environment Dependencies &gt; Browser APIs should be available in test environment" time="0.000111093">
+        </testcase>
+        <testcase classname="src/__tests__/dependency-validation.test.ts" name="Environment Dependencies &gt; Testing environment should have required globals" time="0.000093168">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/import-validation.test.ts" timestamp="2025-09-28T11:54:28.290Z" hostname="tiamat" tests="8" failures="2" errors="0" skipped="0" time="2.395746722">
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; All imports should resolve correctly" time="1.26862528">
+            <failure message="Unresolvable imports found:
+src/main.tsx: ./index.css
+src/main.tsx: ./App.tsx
+src/components/forms/LoginForm.tsx: @/components/ui
+src/components/accounting/JournalEntryForm.tsx: @/components/accessibility
+src/components/accounting/BankReconciliationForm.tsx: @/components/accessibility
+src/components/accounting/AccountForm.tsx: @/components/accessibility
+src/pages/accounting/JournalEntriesPage.tsx: @/components/accessibility
+src/pages/accounting/FinancialStatementsPage.tsx: @/components/accessibility
+src/pages/accounting/ChartOfAccountsPage.tsx: @/components/accessibility
+src/pages/accounting/BankReconciliationPage.tsx: @/components/accessibility" type="Error">
+Error: Unresolvable imports found:
+src/main.tsx: ./index.css
+src/main.tsx: ./App.tsx
+src/components/forms/LoginForm.tsx: @/components/ui
+src/components/accounting/JournalEntryForm.tsx: @/components/accessibility
+src/components/accounting/BankReconciliationForm.tsx: @/components/accessibility
+src/components/accounting/AccountForm.tsx: @/components/accessibility
+src/pages/accounting/JournalEntriesPage.tsx: @/components/accessibility
+src/pages/accounting/FinancialStatementsPage.tsx: @/components/accessibility
+src/pages/accounting/ChartOfAccountsPage.tsx: @/components/accessibility
+src/pages/accounting/BankReconciliationPage.tsx: @/components/accessibility
+ ❯ src/__tests__/import-validation.test.ts:101:13
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; Critical application entry points should be importable" time="0.09707438">
+            <failure message="Critical import failed: ./src/main.tsx
+Error: Target container is not a DOM element." type="Error">
+Error: Critical import failed: ./src/main.tsx
+Error: Target container is not a DOM element.
+ ❯ src/__tests__/import-validation.test.ts:120:15
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; All page components should be importable" time="0.223531313">
+        </testcase>
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; All service modules should be importable" time="0.019630459">
+        </testcase>
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; All hook modules should be importable" time="0.062122585">
+        </testcase>
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; All UI components should be importable" time="0.721535007">
+        </testcase>
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; Path aliases should resolve correctly" time="0.000336741">
+        </testcase>
+        <testcase classname="src/__tests__/import-validation.test.ts" name="Import Validation &gt; Third-party dependencies should be available" time="0.000674149">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/route-validation.test.tsx" timestamp="2025-09-28T11:54:28.290Z" hostname="tiamat" tests="24" failures="24" errors="0" skipped="0" time="0.011212475">
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Public Routes &gt; Login route should render without errors" time="0.003847861">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:86:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Public Routes &gt; Home route should render without errors" time="0.000325054">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:86:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Public Routes &gt; Unauthorized route should render without errors" time="0.000190971">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:86:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Public Routes &gt; Password reset route should render without errors" time="0.000155947">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:86:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /dashboard should render without errors for authenticated user" time="0.000206276">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /customers should render without errors for authenticated user" time="0.000165502">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /quotes should render without errors for authenticated user" time="0.000151461">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /invoices should render without errors for authenticated user" time="0.000160241">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /payments should render without errors for authenticated user" time="0.000152386">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /projects should render without errors for authenticated user" time="0.000141665">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /employees should render without errors for authenticated user" time="0.000136639">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /appointments should render without errors for authenticated user" time="0.000152759">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /analytics should render without errors for authenticated user" time="0.000143843">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /reports should render without errors for authenticated user" time="0.000141547">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /admin/users should render without errors for authenticated user" time="0.000175171">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /admin/organization should render without errors for authenticated user" time="0.000208732">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Route /settings/currency should render without errors for authenticated user" time="0.000187336">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Dashboard route should render main dashboard components" time="0.000193862">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Customers route should render customer management interface" time="0.000195255">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Protected Routes (Authenticated) &gt; Analytics route should render analytics components" time="0.000193813">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:147:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Permission-Based Access &gt; Routes should enforce permission requirements" time="0.000409118">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:233:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Error Handling &gt; Invalid routes should render 404 page without crashing" time="0.000271074">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:276:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Error Handling &gt; Routes with invalid parameters should handle gracefully" time="0.000209362">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:276:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/route-validation.test.tsx" name="Route Validation - Navigation &gt; Root route should redirect to dashboard for authenticated users" time="0.000256804">
+            <failure message="Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx" type="Error">
+Error: Cannot find module &apos;@/stores/auth.store&apos;
+Require stack:
+- /home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx
+ ❯ src/__tests__/route-validation.test.tsx:325:30
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/home/eric/Projects/accounting-frontend/src/__tests__/route-validation.test.tsx&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/smoke-tests.test.tsx" timestamp="2025-09-28T11:54:28.297Z" hostname="tiamat" tests="21" failures="11" errors="0" skipped="0" time="1.457213958">
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Core Components &gt; App component should render without crashing" time="1.000938319">
+            <failure message="expected [Function] to not throw an error but &apos;Error: Element type is invalid: expec…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: Element type is invalid: expec…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it&apos;s defined in, or you might have mixed up default and named imports.&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:56:39
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Core Components &gt; MainLayout should render without crashing" time="0.007573392">
+            <failure message="expected [Function] to not throw an error but &apos;TypeError: canAccess is not a function&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;TypeError: canAccess is not a function&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;TypeError: canAccess is not a function&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:67:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Core Components &gt; ProtectedRoute should render without crashing" time="0.003932656">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Page Components &gt; DashboardPage should render without crashing" time="0.003275937">
+            <failure message="expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useCustomers&quot; exp…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useCustomers&quot; exp…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: [vitest] No \&quot;useCustomers\&quot; export is defined on the \&quot;@/hooks/useAPI\&quot; mock. Did you forget to return it from \&quot;vi.mock\&quot;?
+If you need to partially mock a module, you can use \&quot;importOriginal\&quot; helper inside:
+&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:89:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Page Components &gt; CustomersPage should render without crashing" time="0.001917141">
+            <failure message="expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useCustomers&quot; exp…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useCustomers&quot; exp…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: [vitest] No \&quot;useCustomers\&quot; export is defined on the \&quot;@/hooks/useAPI\&quot; mock. Did you forget to return it from \&quot;vi.mock\&quot;?
+If you need to partially mock a module, you can use \&quot;importOriginal\&quot; helper inside:
+&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:98:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Page Components &gt; QuotesPage should render without crashing" time="0.001777336">
+            <failure message="expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useQuotes&quot; export…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useQuotes&quot; export…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: [vitest] No \&quot;useQuotes\&quot; export is defined on the \&quot;@/hooks/useAPI\&quot; mock. Did you forget to return it from \&quot;vi.mock\&quot;?
+If you need to partially mock a module, you can use \&quot;importOriginal\&quot; helper inside:
+&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:107:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Page Components &gt; InvoicesPage should render without crashing" time="0.0018489">
+            <failure message="expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useInvoices&quot; expo…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useInvoices&quot; expo…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: [vitest] No \&quot;useInvoices\&quot; export is defined on the \&quot;@/hooks/useAPI\&quot; mock. Did you forget to return it from \&quot;vi.mock\&quot;?
+If you need to partially mock a module, you can use \&quot;importOriginal\&quot; helper inside:
+&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:116:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Page Components &gt; PaymentsPage should render without crashing" time="0.001783142">
+            <failure message="expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;usePayments&quot; expo…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;usePayments&quot; expo…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: [vitest] No \&quot;usePayments\&quot; export is defined on the \&quot;@/hooks/useAPI\&quot; mock. Did you forget to return it from \&quot;vi.mock\&quot;?
+If you need to partially mock a module, you can use \&quot;importOriginal\&quot; helper inside:
+&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:125:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Page Components &gt; AnalyticsPage should render without crashing" time="0.005058131">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Page Components &gt; ReportsPage should render without crashing" time="0.39781831">
+            <failure message="expected [Function] to not throw an error but &apos;Error: Maximum update depth exceeded.…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: Maximum update depth exceeded.…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:143:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Form Components &gt; LoginForm should render without crashing" time="0.007514354">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Form Components &gt; CustomerForm should render without crashing" time="0.002938312">
+            <failure message="expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useCreateCustomer…&apos; was thrown" type="AssertionError">
+AssertionError: expected [Function] to not throw an error but &apos;Error: [vitest] No &quot;useCreateCustomer…&apos; was thrown
+
+- Expected: 
+undefined
+
++ Received: 
+&quot;Error: [vitest] No \&quot;useCreateCustomer\&quot; export is defined on the \&quot;@/hooks/useAPI\&quot; mock. Did you forget to return it from \&quot;vi.mock\&quot;?
+If you need to partially mock a module, you can use \&quot;importOriginal\&quot; helper inside:
+&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:163:12
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - UI Components &gt; Button component should render without crashing" time="0.001441295">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - UI Components &gt; Input component should render without crashing" time="0.001336517">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - UI Components &gt; Select component should render without crashing" time="0.007832183">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - UI Components &gt; Table component should render without crashing" time="0.003150808">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Service Modules &gt; API service should be importable and have expected methods" time="0.000837732">
+            <failure message="APIService is not a constructor" type="TypeError">
+TypeError: APIService is not a constructor
+ ❯ src/__tests__/smoke-tests.test.tsx:226:24
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Service Modules &gt; Auth service should be importable and have expected methods" time="0.002154616">
+            <failure message="expected &apos;undefined&apos; to be &apos;function&apos; // Object.is equality" type="AssertionError">
+AssertionError: expected &apos;undefined&apos; to be &apos;function&apos; // Object.is equality
+
+Expected: &quot;function&quot;
+Received: &quot;undefined&quot;
+
+ ❯ src/__tests__/smoke-tests.test.tsx:238:38
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Store Modules &gt; Auth store should be importable and have expected structure" time="0.000672577">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Hook Modules &gt; useAuth hook should be importable" time="0.000443243">
+        </testcase>
+        <testcase classname="src/__tests__/smoke-tests.test.tsx" name="Smoke Tests - Hook Modules &gt; useAPI hook should be importable" time="0.000382525">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/typescript-validation.test.ts" timestamp="2025-09-28T11:54:28.299Z" hostname="tiamat" tests="10" failures="1" errors="0" skipped="0" time="0.384089781">
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="TypeScript Compilation &gt; TypeScript should compile without errors" time="0.208838673">
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="TypeScript Compilation &gt; All TypeScript files should have valid syntax" time="0.040702512">
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="TypeScript Compilation &gt; No unused imports should exist" time="0.056531843">
+            <system-err>
+Potential unused imports found:
+src/App.tsx:2: Potentially unused import &apos;BrowserRouter as Router&apos;
+src/services/invoice-pdf.service.ts:2: Potentially unused import &apos;Image&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;UserRole&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;CustomerType&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;CustomerTier&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;CustomerStatus&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;QuoteStatus&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;InvoiceStatus&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;PaymentStatus&apos;
+src/lib/validation-schemas.ts:2: Potentially unused import &apos;PaymentMethod&apos;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="Type Safety Checks &gt; No any types should be used in critical files" time="0.001108644">
+            <system-err>
+&apos;any&apos; types found in critical files:
+src/services/api.service.ts:385: const searchPromises: Promise&lt;PaginatedResponse&lt;any&gt;&gt;[] = []
+src/services/api.service.ts:466: async getInvoiceTemplates(): Promise&lt;any[]&gt; {
+src/services/api.service.ts:471: async getInvoiceTemplate(templateId: string): Promise&lt;any&gt; {
+src/services/api.service.ts:476: async createInvoiceTemplate(template: any): Promise&lt;any&gt; {
+src/services/api.service.ts:481: async updateInvoiceTemplate(templateId: string, updates: any): Promise&lt;any&gt; {
+src/services/api.service.ts:496: }): Promise&lt;any&gt; {
+src/services/api.service.ts:1291: async getTaxRates(filters: any = {}): Promise&lt;TaxRate[]&gt; {
+src/services/api.service.ts:1341: async amendTaxReturn(id: string, data: { reason: string; changes: any }): Promise&lt;TaxReturn&gt; {
+src/services/api.service.ts:1383: async getTaxNotices(filters: any &amp; { page?: number; limit?: number } = {}): Promise&lt;PaginatedResponse&lt;TaxNotice&gt;&gt; {
+src/services/api.service.ts:1452: async getTaxCalendar(year: number): Promise&lt;any[]&gt; {
+src/services/api.service.ts:1458: async uploadTaxDocument(returnId: string, file: File, documentType: string): Promise&lt;any&gt; {
+src/services/api.service.ts:1486: async getTaxRegistrations(): Promise&lt;any[]&gt; {
+src/services/api.service.ts:1491: async createTaxRegistration(data: any): Promise&lt;any&gt; {
+src/services/api.service.ts:1497: async getTaxAudits(): Promise&lt;any[]&gt; {
+src/services/api.service.ts:1502: async createTaxAuditResponse(auditId: string, data: any): Promise&lt;any&gt; {
+src/services/api.service.ts:1576: async updateOnboardingStep(onboardingId: string, stepId: string, data: any): Promise&lt;CustomerOnboarding&gt; {
+src/services/api.service.ts:1597: async createPortalInvitation(customerId: string, email?: string, message?: string): Promise&lt;any&gt; {
+src/services/api.service.ts:1603: async getCustomerEvents(customerId?: string, filters: any = {}): Promise&lt;PaginatedResponse&lt;CustomerEvent&gt;&gt; {
+src/services/api.service.ts:1656: async createCustomerSegment(data: any): Promise&lt;CustomerSegment&gt; {
+src/services/api.service.ts:1661: async updateCustomerSegment(id: string, data: any): Promise&lt;CustomerSegment&gt; {
+src/services/api.service.ts:1667: async getCustomerLifecycleAnalytics(filters: any = {}): Promise&lt;any&gt; {
+src/services/api.service.ts:1682: async uploadCommunicationAttachment(communicationId: string, file: File): Promise&lt;any&gt; {
+src/services/api.service.ts:1928: async getEmployeeHierarchy(): Promise&lt;any&gt; {
+src/services/api.service.ts:1933: async getEmployeeAnalytics(filters?: any): Promise&lt;any&gt; {
+src/services/api.service.ts:1952: async uploadEmployeeDocument(employeeId: string, file: File, type: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2062: async updateSubscription(id: string, data: any): Promise&lt;Subscription&gt; {
+src/services/api.service.ts:2117: async testIntegration(id: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2195: async getSystemUsers(): Promise&lt;any[]&gt; {
+src/services/api.service.ts:2200: async createSystemUser(data: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2205: async updateSystemUserRole(userId: string, role: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2211: async getBackups(): Promise&lt;any[]&gt; {
+src/services/api.service.ts:2216: async createBackup(includeFiles?: boolean, description?: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2221: async restoreBackup(backupId: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2240: async restartService(serviceName: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2245: async flushCache(cacheType?: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2250: async runSystemCheck(): Promise&lt;any&gt; {
+src/services/api.service.ts:2497: gatewayResponse?: any
+src/services/api.service.ts:2877: data: any[]
+src/services/api.service.ts:2889: async getAnalyticsDashboards(filters?: any): Promise&lt;any[]&gt; {
+src/services/api.service.ts:2894: async getAnalyticsDashboard(dashboardId: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2899: async createAnalyticsDashboard(dashboard: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2904: async updateAnalyticsDashboard(dashboardId: string, dashboard: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2914: async getDashboardWidgets(dashboardId: string): Promise&lt;any[]&gt; {
+src/services/api.service.ts:2919: async createDashboardWidget(widget: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2924: async updateDashboardWidget(widgetId: string, widget: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2933: async getWidgetData(widgetId: string, dateRange?: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2939: async getKPIMetrics(filters?: any): Promise&lt;any[]&gt; {
+src/services/api.service.ts:2944: async getKPIMetric(kpiId: string, dateRange?: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2949: async createKPIMetric(kpi: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2954: async updateKPIMetric(kpiId: string, kpi: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2964: async getAdvancedReports(filters?: any): Promise&lt;any[]&gt; {
+src/services/api.service.ts:2969: async getAdvancedReport(reportId: string): Promise&lt;any&gt; {
+src/services/api.service.ts:2974: async createAdvancedReport(report: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2979: async updateAdvancedReport(reportId: string, report: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2988: async generateAdvancedReport(reportId: string, parameters?: any): Promise&lt;any&gt; {
+src/services/api.service.ts:2993: async exportAdvancedReport(reportId: string, format: string, parameters?: any): Promise&lt;Blob&gt; {
+src/services/api.service.ts:3003: async getDataSourceConnections(): Promise&lt;any[]&gt; {
+src/services/api.service.ts:3008: async createDataSourceConnection(dataSource: any): Promise&lt;any&gt; {
+src/services/api.service.ts:3013: async updateDataSourceConnection(connectionId: string, dataSource: any): Promise&lt;any&gt; {
+src/services/api.service.ts:3028: async getAIInsights(context?: any): Promise&lt;any[]&gt; {
+src/services/api.service.ts:3033: async generateAIInsight(context: any): Promise&lt;any&gt; {
+src/services/api.service.ts:3039: async getAnalyticsPreferences(): Promise&lt;any&gt; {
+src/services/api.service.ts:3044: async updateAnalyticsPreferences(preferences: any): Promise&lt;any&gt; {
+src/services/api.service.ts:3050: async searchAnalytics(query: string, filters?: any): Promise&lt;any&gt; {
+src/services/api.service.ts:3055: async bulkExportAnalytics(options: any): Promise&lt;Blob&gt; {
+src/services/api.service.ts:3060: async getAnalyticsAuditLog(filters?: any): Promise&lt;any[]&gt; {
+src/stores/auth.store.ts:53: } catch (error: any) {
+src/stores/auth.store.ts:81: } catch (error: any) {
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="Type Safety Checks &gt; Interface and type definitions should be consistent" time="0.002403653">
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="Type Safety Checks &gt; Enum definitions should be consistent" time="0.020031735">
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="Import/Export Consistency &gt; All exports should have corresponding imports" time="0.033831062">
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="Import/Export Consistency &gt; Circular dependencies should not exist" time="0.014351882">
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="Type Configuration &gt; tsconfig.json should have appropriate settings" time="0.003830942">
+            <failure message="Failed to validate TypeScript configuration: expected undefined to be defined" type="Error">
+Error: Failed to validate TypeScript configuration: expected undefined to be defined
+ ❯ src/__tests__/typescript-validation.test.ts:338:13
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/typescript-validation.test.ts" name="Type Configuration &gt; Path mapping should be configured correctly" time="0.000232873">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/integration/invoice-workflow.integration.test.tsx" timestamp="2025-09-28T11:54:28.299Z" hostname="tiamat" tests="7" failures="5" errors="0" skipped="0" time="2.015385268">
+        <testcase classname="src/__tests__/integration/invoice-workflow.integration.test.tsx" name="Invoice Workflow Integration &gt; complete invoice creation workflow &gt; should create invoice from quote with accurate financial calculations" time="0.17991186">
+            <failure message="Unable to find a label with the text of: /from quote/i
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;form[39m
+      [33mclass[39m=[32m&quot;space-y-6&quot;[39m
+    [36m&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;svg[39m
+              [33maria-hidden[39m=[32m&quot;true&quot;[39m
+              [33mclass[39m=[32m&quot;lucide lucide-file-text h-5 w-5&quot;[39m
+              [33mfill[39m=[32m&quot;none&quot;[39m
+              [33mheight[39m=[32m&quot;24&quot;[39m
+              [33mstroke[39m=[32m&quot;currentColor&quot;[39m
+              [33mstroke-linecap[39m=[32m&quot;round&quot;[39m
+              [33mstroke-linejoin[39m=[32m&quot;round&quot;[39m
+              [33mstroke-width[39m=[32m&quot;2&quot;[39m
+              [33mviewBox[39m=[32m&quot;0 0 24 24&quot;[39m
+              [33mwidth[39m=[32m&quot;24&quot;[39m
+              [33mxmlns[39m=[32m&quot;http://www.w3.org/2000/svg&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M10 9H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 13H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 17H8&quot;[39m
+              [36m/&gt;[39m
+            [36m&lt;/svg&gt;[39m
+            [36m&lt;span&gt;[39m
+              [0mInvoice Information[0m
+            [36m&lt;/span&gt;[39m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mCreate a new invoice from scratch or from an approved quote[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [0mCustomer *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;select[39m
+              [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+              [33mname[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;option[39m
+                [33mvalue[39m=[32m&quot;&quot;[39m
+              [36m&gt;[39m
+                [0mSelect a customer...[0m
+              [36m&lt;/option&gt;[39m
+            [36m&lt;/select&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;dueDate&quot;[39m
+            [36m&gt;[39m
+              [0mDue Date *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;input[39m
+              [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+              [33mid[39m=[32m&quot;dueDate&quot;[39m
+              [33mname[39m=[32m&quot;dueDate&quot;[39m
+              [33mtype[39m=[32m&quot;date&quot;[39m
+            [36m/&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+      [36m&lt;/div&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+          [36m&gt;[39m
+            [0mLine Items[0m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mAdd products or services to this invoice[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;p-4 border rounded-md space-y-4&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;flex items-center justify-between&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;h4[39m
+                [33mclass[39m=[32m&quot;font-medium&quot;[39m
+              [36m&gt;[39m
+                [0mItem [0m
+                [0m1[0m
+              [36m&lt;/h4&gt;[39m
+            [36m&lt;/div&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;lg:col-span-2 space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                  [33mfor[39m=[32m&quot;items.0.description&quot;[39m
+                [36m&gt;[39m
+                  [0mDescription *[0m
+                [36m&lt;/label&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+                  [33mname[39m=[32m&quot;items.0.description&quot;[39m
+                  [33mplaceholder[39m=[32m&quot;Product or service description&quot;[39m
+                [36m/&gt;[39m
+              [36m&lt;/div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label..." type="TestingLibraryElementError">
+TestingLibraryElementError: Unable to find a label with the text of: /from quote/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;form
+      class=&quot;space-y-6&quot;
+    &gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+          &gt;
+            &lt;svg
+              aria-hidden=&quot;true&quot;
+              class=&quot;lucide lucide-file-text h-5 w-5&quot;
+              fill=&quot;none&quot;
+              height=&quot;24&quot;
+              stroke=&quot;currentColor&quot;
+              stroke-linecap=&quot;round&quot;
+              stroke-linejoin=&quot;round&quot;
+              stroke-width=&quot;2&quot;
+              viewBox=&quot;0 0 24 24&quot;
+              width=&quot;24&quot;
+              xmlns=&quot;http://www.w3.org/2000/svg&quot;
+            &gt;
+              &lt;path
+                d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M10 9H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 13H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 17H8&quot;
+              /&gt;
+            &lt;/svg&gt;
+            &lt;span&gt;
+              Invoice Information
+            &lt;/span&gt;
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Create a new invoice from scratch or from an approved quote
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;customerId&quot;
+            &gt;
+              Customer *
+            &lt;/label&gt;
+            &lt;select
+              class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+              name=&quot;customerId&quot;
+            &gt;
+              &lt;option
+                value=&quot;&quot;
+              &gt;
+                Select a customer...
+              &lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;dueDate&quot;
+            &gt;
+              Due Date *
+            &lt;/label&gt;
+            &lt;input
+              class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+              id=&quot;dueDate&quot;
+              name=&quot;dueDate&quot;
+              type=&quot;date&quot;
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight&quot;
+          &gt;
+            Line Items
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Add products or services to this invoice
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 border rounded-md space-y-4&quot;
+          &gt;
+            &lt;div
+              class=&quot;flex items-center justify-between&quot;
+            &gt;
+              &lt;h4
+                class=&quot;font-medium&quot;
+              &gt;
+                Item 
+                1
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;
+            &gt;
+              &lt;div
+                class=&quot;lg:col-span-2 space-y-2&quot;
+              &gt;
+                &lt;label
+                  class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                  for=&quot;items.0.description&quot;
+                &gt;
+                  Description *
+                &lt;/label&gt;
+                &lt;input
+                  class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+                  name=&quot;items.0.description&quot;
+                  placeholder=&quot;Product or service description&quot;
+                /&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;space-y-2&quot;
+              &gt;
+                &lt;label...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/integration/invoice-workflow.integration.test.tsx:114:37
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/integration/invoice-workflow.integration.test.tsx" name="Invoice Workflow Integration &gt; complete invoice creation workflow &gt; should create standalone invoice with manual item entry" time="0.060098033">
+            <failure message="Unable to find a label with the text of: /standalone invoice/i
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;form[39m
+      [33mclass[39m=[32m&quot;space-y-6&quot;[39m
+    [36m&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;svg[39m
+              [33maria-hidden[39m=[32m&quot;true&quot;[39m
+              [33mclass[39m=[32m&quot;lucide lucide-file-text h-5 w-5&quot;[39m
+              [33mfill[39m=[32m&quot;none&quot;[39m
+              [33mheight[39m=[32m&quot;24&quot;[39m
+              [33mstroke[39m=[32m&quot;currentColor&quot;[39m
+              [33mstroke-linecap[39m=[32m&quot;round&quot;[39m
+              [33mstroke-linejoin[39m=[32m&quot;round&quot;[39m
+              [33mstroke-width[39m=[32m&quot;2&quot;[39m
+              [33mviewBox[39m=[32m&quot;0 0 24 24&quot;[39m
+              [33mwidth[39m=[32m&quot;24&quot;[39m
+              [33mxmlns[39m=[32m&quot;http://www.w3.org/2000/svg&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M10 9H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 13H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 17H8&quot;[39m
+              [36m/&gt;[39m
+            [36m&lt;/svg&gt;[39m
+            [36m&lt;span&gt;[39m
+              [0mInvoice Information[0m
+            [36m&lt;/span&gt;[39m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mCreate a new invoice from scratch or from an approved quote[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [0mCustomer *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;select[39m
+              [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+              [33mname[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;option[39m
+                [33mvalue[39m=[32m&quot;&quot;[39m
+              [36m&gt;[39m
+                [0mSelect a customer...[0m
+              [36m&lt;/option&gt;[39m
+            [36m&lt;/select&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;dueDate&quot;[39m
+            [36m&gt;[39m
+              [0mDue Date *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;input[39m
+              [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+              [33mid[39m=[32m&quot;dueDate&quot;[39m
+              [33mname[39m=[32m&quot;dueDate&quot;[39m
+              [33mtype[39m=[32m&quot;date&quot;[39m
+            [36m/&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+      [36m&lt;/div&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+          [36m&gt;[39m
+            [0mLine Items[0m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mAdd products or services to this invoice[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;p-4 border rounded-md space-y-4&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;flex items-center justify-between&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;h4[39m
+                [33mclass[39m=[32m&quot;font-medium&quot;[39m
+              [36m&gt;[39m
+                [0mItem [0m
+                [0m1[0m
+              [36m&lt;/h4&gt;[39m
+            [36m&lt;/div&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;lg:col-span-2 space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                  [33mfor[39m=[32m&quot;items.0.description&quot;[39m
+                [36m&gt;[39m
+                  [0mDescription *[0m
+                [36m&lt;/label&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+                  [33mname[39m=[32m&quot;items.0.description&quot;[39m
+                  [33mplaceholder[39m=[32m&quot;Product or service description&quot;[39m
+                [36m/&gt;[39m
+              [36m&lt;/div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label..." type="TestingLibraryElementError">
+TestingLibraryElementError: Unable to find a label with the text of: /standalone invoice/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;form
+      class=&quot;space-y-6&quot;
+    &gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+          &gt;
+            &lt;svg
+              aria-hidden=&quot;true&quot;
+              class=&quot;lucide lucide-file-text h-5 w-5&quot;
+              fill=&quot;none&quot;
+              height=&quot;24&quot;
+              stroke=&quot;currentColor&quot;
+              stroke-linecap=&quot;round&quot;
+              stroke-linejoin=&quot;round&quot;
+              stroke-width=&quot;2&quot;
+              viewBox=&quot;0 0 24 24&quot;
+              width=&quot;24&quot;
+              xmlns=&quot;http://www.w3.org/2000/svg&quot;
+            &gt;
+              &lt;path
+                d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M10 9H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 13H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 17H8&quot;
+              /&gt;
+            &lt;/svg&gt;
+            &lt;span&gt;
+              Invoice Information
+            &lt;/span&gt;
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Create a new invoice from scratch or from an approved quote
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;customerId&quot;
+            &gt;
+              Customer *
+            &lt;/label&gt;
+            &lt;select
+              class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+              name=&quot;customerId&quot;
+            &gt;
+              &lt;option
+                value=&quot;&quot;
+              &gt;
+                Select a customer...
+              &lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;dueDate&quot;
+            &gt;
+              Due Date *
+            &lt;/label&gt;
+            &lt;input
+              class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+              id=&quot;dueDate&quot;
+              name=&quot;dueDate&quot;
+              type=&quot;date&quot;
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight&quot;
+          &gt;
+            Line Items
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Add products or services to this invoice
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 border rounded-md space-y-4&quot;
+          &gt;
+            &lt;div
+              class=&quot;flex items-center justify-between&quot;
+            &gt;
+              &lt;h4
+                class=&quot;font-medium&quot;
+              &gt;
+                Item 
+                1
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;
+            &gt;
+              &lt;div
+                class=&quot;lg:col-span-2 space-y-2&quot;
+              &gt;
+                &lt;label
+                  class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                  for=&quot;items.0.description&quot;
+                &gt;
+                  Description *
+                &lt;/label&gt;
+                &lt;input
+                  class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+                  name=&quot;items.0.description&quot;
+                  placeholder=&quot;Product or service description&quot;
+                /&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;space-y-2&quot;
+              &gt;
+                &lt;label...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/integration/invoice-workflow.integration.test.tsx:226:38
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/integration/invoice-workflow.integration.test.tsx" name="Invoice Workflow Integration &gt; invoice sending workflow &gt; should send invoice with email validation" time="0.034172879">
+        </testcase>
+        <testcase classname="src/__tests__/integration/invoice-workflow.integration.test.tsx" name="Invoice Workflow Integration &gt; financial validation workflow &gt; should validate financial calculations throughout the process" time="0.04839474">
+            <failure message="Unable to find a label with the text of: /standalone invoice/i
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;form[39m
+      [33mclass[39m=[32m&quot;space-y-6&quot;[39m
+    [36m&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;svg[39m
+              [33maria-hidden[39m=[32m&quot;true&quot;[39m
+              [33mclass[39m=[32m&quot;lucide lucide-file-text h-5 w-5&quot;[39m
+              [33mfill[39m=[32m&quot;none&quot;[39m
+              [33mheight[39m=[32m&quot;24&quot;[39m
+              [33mstroke[39m=[32m&quot;currentColor&quot;[39m
+              [33mstroke-linecap[39m=[32m&quot;round&quot;[39m
+              [33mstroke-linejoin[39m=[32m&quot;round&quot;[39m
+              [33mstroke-width[39m=[32m&quot;2&quot;[39m
+              [33mviewBox[39m=[32m&quot;0 0 24 24&quot;[39m
+              [33mwidth[39m=[32m&quot;24&quot;[39m
+              [33mxmlns[39m=[32m&quot;http://www.w3.org/2000/svg&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M10 9H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 13H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 17H8&quot;[39m
+              [36m/&gt;[39m
+            [36m&lt;/svg&gt;[39m
+            [36m&lt;span&gt;[39m
+              [0mInvoice Information[0m
+            [36m&lt;/span&gt;[39m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mCreate a new invoice from scratch or from an approved quote[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [0mCustomer *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;select[39m
+              [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+              [33mname[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;option[39m
+                [33mvalue[39m=[32m&quot;&quot;[39m
+              [36m&gt;[39m
+                [0mSelect a customer...[0m
+              [36m&lt;/option&gt;[39m
+            [36m&lt;/select&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;dueDate&quot;[39m
+            [36m&gt;[39m
+              [0mDue Date *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;input[39m
+              [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+              [33mid[39m=[32m&quot;dueDate&quot;[39m
+              [33mname[39m=[32m&quot;dueDate&quot;[39m
+              [33mtype[39m=[32m&quot;date&quot;[39m
+            [36m/&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+      [36m&lt;/div&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+          [36m&gt;[39m
+            [0mLine Items[0m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mAdd products or services to this invoice[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;p-4 border rounded-md space-y-4&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;flex items-center justify-between&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;h4[39m
+                [33mclass[39m=[32m&quot;font-medium&quot;[39m
+              [36m&gt;[39m
+                [0mItem [0m
+                [0m1[0m
+              [36m&lt;/h4&gt;[39m
+            [36m&lt;/div&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;lg:col-span-2 space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                  [33mfor[39m=[32m&quot;items.0.description&quot;[39m
+                [36m&gt;[39m
+                  [0mDescription *[0m
+                [36m&lt;/label&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+                  [33mname[39m=[32m&quot;items.0.description&quot;[39m
+                  [33mplaceholder[39m=[32m&quot;Product or service description&quot;[39m
+                [36m/&gt;[39m
+              [36m&lt;/div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label..." type="TestingLibraryElementError">
+TestingLibraryElementError: Unable to find a label with the text of: /standalone invoice/i
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;form
+      class=&quot;space-y-6&quot;
+    &gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+          &gt;
+            &lt;svg
+              aria-hidden=&quot;true&quot;
+              class=&quot;lucide lucide-file-text h-5 w-5&quot;
+              fill=&quot;none&quot;
+              height=&quot;24&quot;
+              stroke=&quot;currentColor&quot;
+              stroke-linecap=&quot;round&quot;
+              stroke-linejoin=&quot;round&quot;
+              stroke-width=&quot;2&quot;
+              viewBox=&quot;0 0 24 24&quot;
+              width=&quot;24&quot;
+              xmlns=&quot;http://www.w3.org/2000/svg&quot;
+            &gt;
+              &lt;path
+                d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M10 9H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 13H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 17H8&quot;
+              /&gt;
+            &lt;/svg&gt;
+            &lt;span&gt;
+              Invoice Information
+            &lt;/span&gt;
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Create a new invoice from scratch or from an approved quote
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;customerId&quot;
+            &gt;
+              Customer *
+            &lt;/label&gt;
+            &lt;select
+              class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+              name=&quot;customerId&quot;
+            &gt;
+              &lt;option
+                value=&quot;&quot;
+              &gt;
+                Select a customer...
+              &lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;dueDate&quot;
+            &gt;
+              Due Date *
+            &lt;/label&gt;
+            &lt;input
+              class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+              id=&quot;dueDate&quot;
+              name=&quot;dueDate&quot;
+              type=&quot;date&quot;
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight&quot;
+          &gt;
+            Line Items
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Add products or services to this invoice
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 border rounded-md space-y-4&quot;
+          &gt;
+            &lt;div
+              class=&quot;flex items-center justify-between&quot;
+            &gt;
+              &lt;h4
+                class=&quot;font-medium&quot;
+              &gt;
+                Item 
+                1
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;
+            &gt;
+              &lt;div
+                class=&quot;lg:col-span-2 space-y-2&quot;
+              &gt;
+                &lt;label
+                  class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                  for=&quot;items.0.description&quot;
+                &gt;
+                  Description *
+                &lt;/label&gt;
+                &lt;input
+                  class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+                  name=&quot;items.0.description&quot;
+                  placeholder=&quot;Product or service description&quot;
+                /&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;space-y-2&quot;
+              &gt;
+                &lt;label...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/integration/invoice-workflow.integration.test.tsx:362:38
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/integration/invoice-workflow.integration.test.tsx" name="Invoice Workflow Integration &gt; error handling workflow &gt; should handle invoice creation errors gracefully" time="1.074136037">
+            <failure message="Unable to find an element with the text: /customer not found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;form[39m
+      [33mclass[39m=[32m&quot;space-y-6&quot;[39m
+    [36m&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;svg[39m
+              [33maria-hidden[39m=[32m&quot;true&quot;[39m
+              [33mclass[39m=[32m&quot;lucide lucide-file-text h-5 w-5&quot;[39m
+              [33mfill[39m=[32m&quot;none&quot;[39m
+              [33mheight[39m=[32m&quot;24&quot;[39m
+              [33mstroke[39m=[32m&quot;currentColor&quot;[39m
+              [33mstroke-linecap[39m=[32m&quot;round&quot;[39m
+              [33mstroke-linejoin[39m=[32m&quot;round&quot;[39m
+              [33mstroke-width[39m=[32m&quot;2&quot;[39m
+              [33mviewBox[39m=[32m&quot;0 0 24 24&quot;[39m
+              [33mwidth[39m=[32m&quot;24&quot;[39m
+              [33mxmlns[39m=[32m&quot;http://www.w3.org/2000/svg&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M10 9H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 13H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 17H8&quot;[39m
+              [36m/&gt;[39m
+            [36m&lt;/svg&gt;[39m
+            [36m&lt;span&gt;[39m
+              [0mInvoice Information[0m
+            [36m&lt;/span&gt;[39m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mCreate a new invoice from scratch or from an approved quote[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [0mCustomer *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;select[39m
+              [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+              [33mname[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;option[39m
+                [33mvalue[39m=[32m&quot;&quot;[39m
+              [36m&gt;[39m
+                [0mSelect a customer...[0m
+              [36m&lt;/option&gt;[39m
+            [36m&lt;/select&gt;[39m
+            [36m&lt;p[39m
+              [33mclass[39m=[32m&quot;text-sm text-red-600&quot;[39m
+            [36m&gt;[39m
+              [0mCustomer is required[0m
+            [36m&lt;/p&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;dueDate&quot;[39m
+            [36m&gt;[39m
+              [0mDue Date *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;input[39m
+              [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+              [33mid[39m=[32m&quot;dueDate&quot;[39m
+              [33mname[39m=[32m&quot;dueDate&quot;[39m
+              [33mtype[39m=[32m&quot;date&quot;[39m
+            [36m/&gt;[39m
+            [36m&lt;p[39m
+              [33mclass[39m=[32m&quot;text-sm text-red-600&quot;[39m
+            [36m&gt;[39m
+              [0mDue date is required[0m
+            [36m&lt;/p&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+      [36m&lt;/div&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+          [36m&gt;[39m
+            [0mLine Items[0m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mAdd products or services to this invoice[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;p-4 border rounded-md space-y-4&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;flex items-center justify-between&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;h4[39m
+                [33mclass[39m=[32m&quot;font-medium&quot;[39m
+              [36m&gt;[39m
+                [0mItem [0m
+                [0m1[0m
+              [36m&lt;/h4&gt;[39m
+            [36m&lt;/div&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;lg:col-span-2 space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                  [33mfor[39m=[32m&quot;items.0.description&quot;[39m
+                [36m&gt;[39m
+                  [0mDescription *[0m
+                [36m&lt;/label&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44...
+
+Ignored nodes: comments, script, style
+[36m&lt;html&gt;[39m
+  [36m&lt;head /&gt;[39m
+  [36m&lt;body&gt;[39m
+    [36m&lt;div&gt;[39m
+      [36m&lt;form[39m
+        [33mclass[39m=[32m&quot;space-y-6&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;h3[39m
+              [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;svg[39m
+                [33maria-hidden[39m=[32m&quot;true&quot;[39m
+                [33mclass[39m=[32m&quot;lucide lucide-file-text h-5 w-5&quot;[39m
+                [33mfill[39m=[32m&quot;none&quot;[39m
+                [33mheight[39m=[32m&quot;24&quot;[39m
+                [33mstroke[39m=[32m&quot;currentColor&quot;[39m
+                [33mstroke-linecap[39m=[32m&quot;round&quot;[39m
+                [33mstroke-linejoin[39m=[32m&quot;round&quot;[39m
+                [33mstroke-width[39m=[32m&quot;2&quot;[39m
+                [33mviewBox[39m=[32m&quot;0 0 24 24&quot;[39m
+                [33mwidth[39m=[32m&quot;24&quot;[39m
+                [33mxmlns[39m=[32m&quot;http://www.w3.org/2000/svg&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;path[39m
+                  [33md[39m=[32m&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;[39m
+                [36m/&gt;[39m
+                [36m&lt;path[39m
+                  [33md[39m=[32m&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;[39m
+                [36m/&gt;[39m
+                [36m&lt;path[39m
+                  [33md[39m=[32m&quot;M10 9H8&quot;[39m
+                [36m/&gt;[39m
+                [36m&lt;path[39m
+                  [33md[39m=[32m&quot;M16 13H8&quot;[39m
+                [36m/&gt;[39m
+                [36m&lt;path[39m
+                  [33md[39m=[32m&quot;M16 17H8&quot;[39m
+                [36m/&gt;[39m
+              [36m&lt;/svg&gt;[39m
+              [36m&lt;span&gt;[39m
+                [0mInvoice Information[0m
+              [36m&lt;/span&gt;[39m
+            [36m&lt;/h3&gt;[39m
+            [36m&lt;p[39m
+              [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+            [36m&gt;[39m
+              [0mCreate a new invoice from scratch or from an approved quote[0m
+            [36m&lt;/p&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;label[39m
+                [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                [33mfor[39m=[32m&quot;customerId&quot;[39m
+              [36m&gt;[39m
+                [0mCustomer *[0m
+              [36m&lt;/label&gt;[39m
+              [36m&lt;select[39m
+                [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+                [33mname[39m=[32m&quot;customerId&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;option[39m
+                  [33mvalue[39m=[32m&quot;&quot;[39m
+                [36m&gt;[39m
+                  [0mSelect a customer...[0m
+                [36m&lt;/option&gt;[39m
+              [36m&lt;/select&gt;[39m
+              [36m&lt;p[39m
+                [33mclass[39m=[32m&quot;text-sm text-red-600&quot;[39m
+              [36m&gt;[39m
+                [0mCustomer is required[0m
+              [36m&lt;/p&gt;[39m
+            [36m&lt;/div&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;label[39m
+                [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                [33mfor[39m=[32m&quot;dueDate&quot;[39m
+              [36m&gt;[39m
+                [0mDue Date *[0m
+              [36m&lt;/label&gt;[39m
+              [36m&lt;input[39m
+                [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+                [33mid[39m=[32m&quot;dueDate&quot;[39m
+                [33mname[39m=[32m&quot;dueDate&quot;[39m
+                [33mtype[39m=[32m&quot;date&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;p[39m
+                [33mclass[39m=[32m&quot;text-sm text-red-600&quot;[39m
+              [36m&gt;[39m
+                [0mDue date is required[0m
+              [36m&lt;/p&gt;[39m
+            [36m&lt;/div&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;h3[39m
+              [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+            [36m&gt;[39m
+              [0mLine Items[0m
+            [36m&lt;/h3&gt;[39m
+            [36m&lt;p[39m
+              [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+            [36m&gt;[39m
+              [0mAdd products or services to this invoice[0m
+            [36m&lt;/p&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;p-4 border rounded-md space-y-4&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;flex items-center justify-between&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;h4[39m
+                  [33mclass[39m=[32m&quot;font-medium&quot;[39m
+                [36m&gt;[39m
+                  [0mItem [0m
+                  [0m1[0m
+                [36m&lt;/h4&gt;[39m
+              [36m&lt;/div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;div[39m
+                  [33mclass[39m=[32m&quot;lg:col-span-2 space-y-2&quot;[39m
+                [36m&gt;[39m
+                  [36m&lt;label[39m
+                    [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                    [33mfor[39m=[32m&quot;items.0.description&quot;[39m
+                  [36m&gt;[39m
+                    [0mDescription *[0m
+                  [36m&lt;/label&gt;[39m
+                  [36m&lt;input[39m
+                    [33mclass[39m=[32m&quot;flex w-full rounded-md bor..." type="TestingLibraryElementError">
+TestingLibraryElementError: Unable to find an element with the text: /customer not found/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;form
+      class=&quot;space-y-6&quot;
+    &gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+          &gt;
+            &lt;svg
+              aria-hidden=&quot;true&quot;
+              class=&quot;lucide lucide-file-text h-5 w-5&quot;
+              fill=&quot;none&quot;
+              height=&quot;24&quot;
+              stroke=&quot;currentColor&quot;
+              stroke-linecap=&quot;round&quot;
+              stroke-linejoin=&quot;round&quot;
+              stroke-width=&quot;2&quot;
+              viewBox=&quot;0 0 24 24&quot;
+              width=&quot;24&quot;
+              xmlns=&quot;http://www.w3.org/2000/svg&quot;
+            &gt;
+              &lt;path
+                d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M10 9H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 13H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 17H8&quot;
+              /&gt;
+            &lt;/svg&gt;
+            &lt;span&gt;
+              Invoice Information
+            &lt;/span&gt;
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Create a new invoice from scratch or from an approved quote
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;customerId&quot;
+            &gt;
+              Customer *
+            &lt;/label&gt;
+            &lt;select
+              class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+              name=&quot;customerId&quot;
+            &gt;
+              &lt;option
+                value=&quot;&quot;
+              &gt;
+                Select a customer...
+              &lt;/option&gt;
+            &lt;/select&gt;
+            &lt;p
+              class=&quot;text-sm text-red-600&quot;
+            &gt;
+              Customer is required
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;dueDate&quot;
+            &gt;
+              Due Date *
+            &lt;/label&gt;
+            &lt;input
+              class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+              id=&quot;dueDate&quot;
+              name=&quot;dueDate&quot;
+              type=&quot;date&quot;
+            /&gt;
+            &lt;p
+              class=&quot;text-sm text-red-600&quot;
+            &gt;
+              Due date is required
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight&quot;
+          &gt;
+            Line Items
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Add products or services to this invoice
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 border rounded-md space-y-4&quot;
+          &gt;
+            &lt;div
+              class=&quot;flex items-center justify-between&quot;
+            &gt;
+              &lt;h4
+                class=&quot;font-medium&quot;
+              &gt;
+                Item 
+                1
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;
+            &gt;
+              &lt;div
+                class=&quot;lg:col-span-2 space-y-2&quot;
+              &gt;
+                &lt;label
+                  class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                  for=&quot;items.0.description&quot;
+                &gt;
+                  Description *
+                &lt;/label&gt;
+                &lt;input
+                  class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44...
+
+Ignored nodes: comments, script, style
+&lt;html&gt;
+  &lt;head /&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;form
+        class=&quot;space-y-6&quot;
+      &gt;
+        &lt;div
+          class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+        &gt;
+          &lt;div
+            class=&quot;flex flex-col space-y-1.5 p-6&quot;
+          &gt;
+            &lt;h3
+              class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+            &gt;
+              &lt;svg
+                aria-hidden=&quot;true&quot;
+                class=&quot;lucide lucide-file-text h-5 w-5&quot;
+                fill=&quot;none&quot;
+                height=&quot;24&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;24&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M10 9H8&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M16 13H8&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M16 17H8&quot;
+                /&gt;
+              &lt;/svg&gt;
+              &lt;span&gt;
+                Invoice Information
+              &lt;/span&gt;
+            &lt;/h3&gt;
+            &lt;p
+              class=&quot;text-sm text-muted-foreground&quot;
+            &gt;
+              Create a new invoice from scratch or from an approved quote
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;p-6 pt-0 space-y-4&quot;
+          &gt;
+            &lt;div
+              class=&quot;space-y-2&quot;
+            &gt;
+              &lt;label
+                class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                for=&quot;customerId&quot;
+              &gt;
+                Customer *
+              &lt;/label&gt;
+              &lt;select
+                class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+                name=&quot;customerId&quot;
+              &gt;
+                &lt;option
+                  value=&quot;&quot;
+                &gt;
+                  Select a customer...
+                &lt;/option&gt;
+              &lt;/select&gt;
+              &lt;p
+                class=&quot;text-sm text-red-600&quot;
+              &gt;
+                Customer is required
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;space-y-2&quot;
+            &gt;
+              &lt;label
+                class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                for=&quot;dueDate&quot;
+              &gt;
+                Due Date *
+              &lt;/label&gt;
+              &lt;input
+                class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+                id=&quot;dueDate&quot;
+                name=&quot;dueDate&quot;
+                type=&quot;date&quot;
+              /&gt;
+              &lt;p
+                class=&quot;text-sm text-red-600&quot;
+              &gt;
+                Due date is required
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+        &gt;
+          &lt;div
+            class=&quot;flex flex-col space-y-1.5 p-6&quot;
+          &gt;
+            &lt;h3
+              class=&quot;font-semibold leading-none tracking-tight&quot;
+            &gt;
+              Line Items
+            &lt;/h3&gt;
+            &lt;p
+              class=&quot;text-sm text-muted-foreground&quot;
+            &gt;
+              Add products or services to this invoice
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;p-6 pt-0 space-y-4&quot;
+          &gt;
+            &lt;div
+              class=&quot;p-4 border rounded-md space-y-4&quot;
+            &gt;
+              &lt;div
+                class=&quot;flex items-center justify-between&quot;
+              &gt;
+                &lt;h4
+                  class=&quot;font-medium&quot;
+                &gt;
+                  Item 
+                  1
+                &lt;/h4&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;
+              &gt;
+                &lt;div
+                  class=&quot;lg:col-span-2 space-y-2&quot;
+                &gt;
+                  &lt;label
+                    class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                    for=&quot;items.0.description&quot;
+                  &gt;
+                    Description *
+                  &lt;/label&gt;
+                  &lt;input
+                    class=&quot;flex w-full rounded-md bor...
+ ❯ Proxy.waitForWrapper node_modules/@testing-library/dom/dist/wait-for.js:163:27
+ ❯ src/__tests__/integration/invoice-workflow.integration.test.tsx:437:13
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/integration/invoice-workflow.integration.test.tsx" name="Invoice Workflow Integration &gt; error handling workflow &gt; should prevent unauthorized access to invoice creation" time="0.040125428">
+        </testcase>
+        <testcase classname="src/__tests__/integration/invoice-workflow.integration.test.tsx" name="Invoice Workflow Integration &gt; performance workflow &gt; should handle large invoice creation efficiently" time="0.573792589">
+            <failure message="Unable to find an accessible element with the role &quot;button&quot; and name `/add item/i`
+
+Here are the accessible roles:
+
+  heading:
+
+  Name &quot;Invoice Information&quot;:
+  [36m&lt;h3[39m
+    [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Line Items&quot;:
+  [36m&lt;h3[39m
+    [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Item 1&quot;:
+  [36m&lt;h4[39m
+    [33mclass[39m=[32m&quot;font-medium&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Invoice Summary&quot;:
+  [36m&lt;h3[39m
+    [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Additional Information&quot;:
+  [36m&lt;h3[39m
+    [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+  paragraph:
+
+  Name &quot;&quot;:
+  [36m&lt;p[39m
+    [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;&quot;:
+  [36m&lt;p[39m
+    [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;&quot;:
+  [36m&lt;p[39m
+    [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+  combobox:
+
+  Name &quot;&quot;:
+  [36m&lt;select[39m
+    [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+    [33mname[39m=[32m&quot;customerId&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;&quot;:
+  [36m&lt;select[39m
+    [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+    [33mname[39m=[32m&quot;items.0.taxRate&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+  option:
+
+  Name &quot;Select a customer...&quot;:
+  [36m&lt;option[39m
+    [33mvalue[39m=[32m&quot;&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;0% (Tax exempt)&quot;:
+  [36m&lt;option[39m
+    [33mvalue[39m=[32m&quot;0&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;5% (GST)&quot;:
+  [36m&lt;option[39m
+    [33mvalue[39m=[32m&quot;0.05&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;13% (HST)&quot;:
+  [36m&lt;option[39m
+    [33mvalue[39m=[32m&quot;0.13&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;15% (HST)&quot;:
+  [36m&lt;option[39m
+    [33mvalue[39m=[32m&quot;0.15&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+  textbox:
+
+  Name &quot;&quot;:
+  [36m&lt;input[39m
+    [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+    [33mname[39m=[32m&quot;items.0.description&quot;[39m
+    [33mplaceholder[39m=[32m&quot;Product or service description&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Internal Notes&quot;:
+  [36m&lt;textarea[39m
+    [33mclass[39m=[32m&quot;flex min-h-[60px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+    [33mid[39m=[32m&quot;notes&quot;[39m
+    [33mname[39m=[32m&quot;notes&quot;[39m
+    [33mplaceholder[39m=[32m&quot;Internal notes (not visible to customer)&quot;[39m
+    [33mrows[39m=[32m&quot;3&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Terms &amp; Conditions&quot;:
+  [36m&lt;textarea[39m
+    [33mclass[39m=[32m&quot;flex min-h-[80px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+    [33mid[39m=[32m&quot;terms&quot;[39m
+    [33mname[39m=[32m&quot;terms&quot;[39m
+    [33mplaceholder[39m=[32m&quot;Terms and conditions for this invoice&quot;[39m
+    [33mrows[39m=[32m&quot;4&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+  spinbutton:
+
+  Name &quot;&quot;:
+  [36m&lt;input[39m
+    [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+    [33mname[39m=[32m&quot;items.0.quantity&quot;[39m
+    [33mstep[39m=[32m&quot;0.01&quot;[39m
+    [33mtype[39m=[32m&quot;number&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;&quot;:
+  [36m&lt;input[39m
+    [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+    [33mname[39m=[32m&quot;items.0.unitPrice&quot;[39m
+    [33mstep[39m=[32m&quot;0.01&quot;[39m
+    [33mtype[39m=[32m&quot;number&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+  button:
+
+  Name &quot;Add Line Item&quot;:
+  [36m&lt;button[39m
+    [33mclass[39m=[32m&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 touch-manipulation border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground active:bg-accent/90 h-9 px-4 py-2 w-full&quot;[39m
+    [33mtype[39m=[32m&quot;button&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Cancel&quot;:
+  [36m&lt;button[39m
+    [33mclass[39m=[32m&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 touch-manipulation border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground active:bg-accent/90 h-9 px-4 py-2&quot;[39m
+    [33mtype[39m=[32m&quot;button&quot;[39m
+  [36m/&gt;[39m
+
+  Name &quot;Create Invoice&quot;:
+  [36m&lt;button[39m
+    [33mclass[39m=[32m&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 touch-manipulation bg-primary text-primary-foreground shadow hover:bg-primary/90 active:bg-primary/95 h-9 px-4 py-2&quot;[39m
+    [33mtype[39m=[32m&quot;submit&quot;[39m
+  [36m/&gt;[39m
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;form[39m
+      [33mclass[39m=[32m&quot;space-y-6&quot;[39m
+    [36m&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;svg[39m
+              [33maria-hidden[39m=[32m&quot;true&quot;[39m
+              [33mclass[39m=[32m&quot;lucide lucide-file-text h-5 w-5&quot;[39m
+              [33mfill[39m=[32m&quot;none&quot;[39m
+              [33mheight[39m=[32m&quot;24&quot;[39m
+              [33mstroke[39m=[32m&quot;currentColor&quot;[39m
+              [33mstroke-linecap[39m=[32m&quot;round&quot;[39m
+              [33mstroke-linejoin[39m=[32m&quot;round&quot;[39m
+              [33mstroke-width[39m=[32m&quot;2&quot;[39m
+              [33mviewBox[39m=[32m&quot;0 0 24 24&quot;[39m
+              [33mwidth[39m=[32m&quot;24&quot;[39m
+              [33mxmlns[39m=[32m&quot;http://www.w3.org/2000/svg&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M10 9H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 13H8&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;path[39m
+                [33md[39m=[32m&quot;M16 17H8&quot;[39m
+              [36m/&gt;[39m
+            [36m&lt;/svg&gt;[39m
+            [36m&lt;span&gt;[39m
+              [0mInvoice Information[0m
+            [36m&lt;/span&gt;[39m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mCreate a new invoice from scratch or from an approved quote[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [0mCustomer *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;select[39m
+              [33mclass[39m=[32m&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;[39m
+              [33mname[39m=[32m&quot;customerId&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;option[39m
+                [33mvalue[39m=[32m&quot;&quot;[39m
+              [36m&gt;[39m
+                [0mSelect a customer...[0m
+              [36m&lt;/option&gt;[39m
+            [36m&lt;/select&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;label[39m
+              [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+              [33mfor[39m=[32m&quot;dueDate&quot;[39m
+            [36m&gt;[39m
+              [0mDue Date *[0m
+            [36m&lt;/label&gt;[39m
+            [36m&lt;input[39m
+              [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+              [33mid[39m=[32m&quot;dueDate&quot;[39m
+              [33mname[39m=[32m&quot;dueDate&quot;[39m
+              [33mtype[39m=[32m&quot;date&quot;[39m
+            [36m/&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+      [36m&lt;/div&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;rounded-xl border bg-card text-card-foreground shadow&quot;[39m
+      [36m&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;flex flex-col space-y-1.5 p-6&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;h3[39m
+            [33mclass[39m=[32m&quot;font-semibold leading-none tracking-tight&quot;[39m
+          [36m&gt;[39m
+            [0mLine Items[0m
+          [36m&lt;/h3&gt;[39m
+          [36m&lt;p[39m
+            [33mclass[39m=[32m&quot;text-sm text-muted-foreground&quot;[39m
+          [36m&gt;[39m
+            [0mAdd products or services to this invoice[0m
+          [36m&lt;/p&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;p-6 pt-0 space-y-4&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;p-4 border rounded-md space-y-4&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;flex items-center justify-between&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;h4[39m
+                [33mclass[39m=[32m&quot;font-medium&quot;[39m
+              [36m&gt;[39m
+                [0mItem [0m
+                [0m1[0m
+              [36m&lt;/h4&gt;[39m
+            [36m&lt;/div&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;lg:col-span-2 space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;[39m
+                  [33mfor[39m=[32m&quot;items.0.description&quot;[39m
+                [36m&gt;[39m
+                  [0mDescription *[0m
+                [36m&lt;/label&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;[39m
+                  [33mname[39m=[32m&quot;items.0.description&quot;[39m
+                  [33mplaceholder[39m=[32m&quot;Product or service description&quot;[39m
+                [36m/&gt;[39m
+              [36m&lt;/div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;space-y-2&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;label..." type="TestingLibraryElementError">
+TestingLibraryElementError: Unable to find an accessible element with the role &quot;button&quot; and name `/add item/i`
+
+Here are the accessible roles:
+
+  heading:
+
+  Name &quot;Invoice Information&quot;:
+  &lt;h3
+    class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+  /&gt;
+
+  Name &quot;Line Items&quot;:
+  &lt;h3
+    class=&quot;font-semibold leading-none tracking-tight&quot;
+  /&gt;
+
+  Name &quot;Item 1&quot;:
+  &lt;h4
+    class=&quot;font-medium&quot;
+  /&gt;
+
+  Name &quot;Invoice Summary&quot;:
+  &lt;h3
+    class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+  /&gt;
+
+  Name &quot;Additional Information&quot;:
+  &lt;h3
+    class=&quot;font-semibold leading-none tracking-tight&quot;
+  /&gt;
+
+  --------------------------------------------------
+  paragraph:
+
+  Name &quot;&quot;:
+  &lt;p
+    class=&quot;text-sm text-muted-foreground&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;p
+    class=&quot;text-sm text-muted-foreground&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;p
+    class=&quot;text-sm text-muted-foreground&quot;
+  /&gt;
+
+  --------------------------------------------------
+  combobox:
+
+  Name &quot;&quot;:
+  &lt;select
+    class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+    name=&quot;customerId&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;select
+    class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+    name=&quot;items.0.taxRate&quot;
+  /&gt;
+
+  --------------------------------------------------
+  option:
+
+  Name &quot;Select a customer...&quot;:
+  &lt;option
+    value=&quot;&quot;
+  /&gt;
+
+  Name &quot;0% (Tax exempt)&quot;:
+  &lt;option
+    value=&quot;0&quot;
+  /&gt;
+
+  Name &quot;5% (GST)&quot;:
+  &lt;option
+    value=&quot;0.05&quot;
+  /&gt;
+
+  Name &quot;13% (HST)&quot;:
+  &lt;option
+    value=&quot;0.13&quot;
+  /&gt;
+
+  Name &quot;15% (HST)&quot;:
+  &lt;option
+    value=&quot;0.15&quot;
+  /&gt;
+
+  --------------------------------------------------
+  textbox:
+
+  Name &quot;&quot;:
+  &lt;input
+    class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+    name=&quot;items.0.description&quot;
+    placeholder=&quot;Product or service description&quot;
+  /&gt;
+
+  Name &quot;Internal Notes&quot;:
+  &lt;textarea
+    class=&quot;flex min-h-[60px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+    id=&quot;notes&quot;
+    name=&quot;notes&quot;
+    placeholder=&quot;Internal notes (not visible to customer)&quot;
+    rows=&quot;3&quot;
+  /&gt;
+
+  Name &quot;Terms &amp; Conditions&quot;:
+  &lt;textarea
+    class=&quot;flex min-h-[80px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+    id=&quot;terms&quot;
+    name=&quot;terms&quot;
+    placeholder=&quot;Terms and conditions for this invoice&quot;
+    rows=&quot;4&quot;
+  /&gt;
+
+  --------------------------------------------------
+  spinbutton:
+
+  Name &quot;&quot;:
+  &lt;input
+    class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+    name=&quot;items.0.quantity&quot;
+    step=&quot;0.01&quot;
+    type=&quot;number&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;input
+    class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+    name=&quot;items.0.unitPrice&quot;
+    step=&quot;0.01&quot;
+    type=&quot;number&quot;
+  /&gt;
+
+  --------------------------------------------------
+  button:
+
+  Name &quot;Add Line Item&quot;:
+  &lt;button
+    class=&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 touch-manipulation border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground active:bg-accent/90 h-9 px-4 py-2 w-full&quot;
+    type=&quot;button&quot;
+  /&gt;
+
+  Name &quot;Cancel&quot;:
+  &lt;button
+    class=&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 touch-manipulation border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground active:bg-accent/90 h-9 px-4 py-2&quot;
+    type=&quot;button&quot;
+  /&gt;
+
+  Name &quot;Create Invoice&quot;:
+  &lt;button
+    class=&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 touch-manipulation bg-primary text-primary-foreground shadow hover:bg-primary/90 active:bg-primary/95 h-9 px-4 py-2&quot;
+    type=&quot;submit&quot;
+  /&gt;
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;form
+      class=&quot;space-y-6&quot;
+    &gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight flex items-center space-x-2&quot;
+          &gt;
+            &lt;svg
+              aria-hidden=&quot;true&quot;
+              class=&quot;lucide lucide-file-text h-5 w-5&quot;
+              fill=&quot;none&quot;
+              height=&quot;24&quot;
+              stroke=&quot;currentColor&quot;
+              stroke-linecap=&quot;round&quot;
+              stroke-linejoin=&quot;round&quot;
+              stroke-width=&quot;2&quot;
+              viewBox=&quot;0 0 24 24&quot;
+              width=&quot;24&quot;
+              xmlns=&quot;http://www.w3.org/2000/svg&quot;
+            &gt;
+              &lt;path
+                d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M10 9H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 13H8&quot;
+              /&gt;
+              &lt;path
+                d=&quot;M16 17H8&quot;
+              /&gt;
+            &lt;/svg&gt;
+            &lt;span&gt;
+              Invoice Information
+            &lt;/span&gt;
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Create a new invoice from scratch or from an approved quote
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;customerId&quot;
+            &gt;
+              Customer *
+            &lt;/label&gt;
+            &lt;select
+              class=&quot;flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50&quot;
+              name=&quot;customerId&quot;
+            &gt;
+              &lt;option
+                value=&quot;&quot;
+              &gt;
+                Select a customer...
+              &lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;space-y-2&quot;
+          &gt;
+            &lt;label
+              class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+              for=&quot;dueDate&quot;
+            &gt;
+              Due Date *
+            &lt;/label&gt;
+            &lt;input
+              class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+              id=&quot;dueDate&quot;
+              name=&quot;dueDate&quot;
+              type=&quot;date&quot;
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;rounded-xl border bg-card text-card-foreground shadow&quot;
+      &gt;
+        &lt;div
+          class=&quot;flex flex-col space-y-1.5 p-6&quot;
+        &gt;
+          &lt;h3
+            class=&quot;font-semibold leading-none tracking-tight&quot;
+          &gt;
+            Line Items
+          &lt;/h3&gt;
+          &lt;p
+            class=&quot;text-sm text-muted-foreground&quot;
+          &gt;
+            Add products or services to this invoice
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;p-6 pt-0 space-y-4&quot;
+        &gt;
+          &lt;div
+            class=&quot;p-4 border rounded-md space-y-4&quot;
+          &gt;
+            &lt;div
+              class=&quot;flex items-center justify-between&quot;
+            &gt;
+              &lt;h4
+                class=&quot;font-medium&quot;
+              &gt;
+                Item 
+                1
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4&quot;
+            &gt;
+              &lt;div
+                class=&quot;lg:col-span-2 space-y-2&quot;
+              &gt;
+                &lt;label
+                  class=&quot;text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70&quot;
+                  for=&quot;items.0.description&quot;
+                &gt;
+                  Description *
+                &lt;/label&gt;
+                &lt;input
+                  class=&quot;flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-9 md:h-9 md:text-sm min-h-[44px] text-base&quot;
+                  name=&quot;items.0.description&quot;
+                  placeholder=&quot;Product or service description&quot;
+                /&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;space-y-2&quot;
+              &gt;
+                &lt;label...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/integration/invoice-workflow.integration.test.tsx:468:36
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/hooks/__tests__/useAuth.test.ts" timestamp="2025-09-28T11:54:28.302Z" hostname="tiamat" tests="14" failures="9" errors="0" skipped="0" time="0.03967874">
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; role hierarchy &gt; should correctly implement role hierarchy" time="0.019857725">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:55:54
+ ❯ src/hooks/__tests__/useAuth.test.ts:47:17
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; permission system &gt; SUPER_ADMIN permissions &gt; should have all permissions" time="0.001903323">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:173:64
+ ❯ src/hooks/__tests__/useAuth.test.ts:172:29
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; permission system &gt; ADMIN permissions &gt; should have correct permissions for ADMIN" time="0.001533078">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:184:64
+ ❯ src/hooks/__tests__/useAuth.test.ts:183:27
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; permission system &gt; MANAGER permissions &gt; should have correct permissions for MANAGER" time="0.001366471">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:184:64
+ ❯ src/hooks/__tests__/useAuth.test.ts:183:27
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; permission system &gt; EMPLOYEE permissions &gt; should have correct permissions for EMPLOYEE" time="0.001484644">
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; permission system &gt; CONTRACTOR permissions &gt; should have correct permissions for CONTRACTOR" time="0.00145658">
+            <failure message="expected true to be false // Object.is equality" type="AssertionError">
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:189:64
+ ❯ src/hooks/__tests__/useAuth.test.ts:188:28
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; permission system &gt; READONLY permissions &gt; should have correct permissions for READONLY" time="0.001263505">
+            <failure message="expected true to be false // Object.is equality" type="AssertionError">
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:189:64
+ ❯ src/hooks/__tests__/useAuth.test.ts:188:28
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; canAccess helper &gt; should correctly check resource access" time="0.001258885">
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; canAccess helper &gt; should default to read access" time="0.001138195">
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; unauthenticated state &gt; should return false for all permissions when not authenticated" time="0.001279921">
+            <failure message="expected true to be false // Object.is equality" type="AssertionError">
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:240:62
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; integration with auth store &gt; should reflect auth store state changes" time="0.001185818">
+            <failure message="expected true to be false // Object.is equality" type="AssertionError">
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:254:46
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; integration with auth store &gt; should provide all auth store actions" time="0.001038124">
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; financial role scenarios &gt; should handle accountant-specific permissions correctly" time="0.001127221">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/hooks/__tests__/useAuth.test.ts:293:61
+            </failure>
+        </testcase>
+        <testcase classname="src/hooks/__tests__/useAuth.test.ts" name="useAuth Hook &gt; financial role scenarios &gt; should restrict sensitive operations appropriately" time="0.000969946">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/__tests__/financial-calculations.test.ts" timestamp="2025-09-28T11:54:28.304Z" hostname="tiamat" tests="19" failures="0" errors="0" skipped="0" time="0.005245427">
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; precision and rounding &gt; should handle currency precision correctly" time="0.000963614">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; precision and rounding &gt; should maintain precision across multiple calculations" time="0.000185645">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; precision and rounding &gt; should handle edge cases in financial calculations" time="0.000120275">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; tax calculations &gt; should calculate tax correctly for various rates" time="0.000312213">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; tax calculations &gt; should handle compound tax calculations" time="0.000105901">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; tax calculations &gt; should handle tax-inclusive pricing" time="0.000079985">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; discount calculations &gt; should calculate percentage discounts correctly" time="0.000122608">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; discount calculations &gt; should calculate fixed amount discounts correctly" time="0.000100286">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; payment calculations &gt; should calculate payment allocations correctly" time="0.000183372">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; payment calculations &gt; should handle overpayment scenarios" time="0.000070683">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; payment calculations &gt; should calculate payment processing fees" time="0.000111796">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; currency conversion &gt; should handle currency conversion with proper rounding" time="0.000074324">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; currency conversion &gt; should maintain precision in conversion chains" time="0.000073858">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; interest and penalty calculations &gt; should calculate late payment penalties" time="0.000060237">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; interest and penalty calculations &gt; should calculate compound interest" time="0.000063292">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; recurring billing calculations &gt; should calculate prorated amounts for partial periods" time="0.000060936">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; recurring billing calculations &gt; should handle leap year prorating" time="0.00006043">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; financial reporting calculations &gt; should calculate accurate profit margins" time="0.000075217">
+        </testcase>
+        <testcase classname="src/lib/__tests__/financial-calculations.test.ts" name="Financial Calculations &gt; financial reporting calculations &gt; should handle zero-division scenarios in ratio calculations" time="0.000066399">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/stores/__tests__/auth.store.test.ts" timestamp="2025-09-28T11:54:28.304Z" hostname="tiamat" tests="15" failures="0" errors="0" skipped="0" time="0.008341873">
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; initial state &gt; should have correct initial state" time="0.001275247">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; login &gt; should login successfully with valid credentials" time="0.00136917">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; login &gt; should handle login failure" time="0.001024514">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; login &gt; should set loading state during login" time="0.00020849">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; logout &gt; should clear user state on logout" time="0.000269734">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; token refresh &gt; should refresh tokens successfully" time="0.000342092">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; token refresh &gt; should logout if refresh token is expired" time="0.000227237">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; token refresh &gt; should logout if refresh fails" time="0.000189865">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; initialize &gt; should initialize with valid stored tokens" time="0.000224851">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; initialize &gt; should refresh tokens if access token expired but refresh token valid" time="0.000200345">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; initialize &gt; should logout if both tokens are expired" time="0.000129568">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; initialize &gt; should handle initialization errors gracefully" time="0.000134179">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; error handling &gt; should clear errors when clearError is called" time="0.000123892">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; error handling &gt; should set loading state correctly" time="0.000101483">
+        </testcase>
+        <testcase classname="src/stores/__tests__/auth.store.test.ts" name="Auth Store &gt; persistence &gt; should persist authentication state" time="0.000120603">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/services/__tests__/auth.service.test.ts" timestamp="2025-09-28T11:54:28.305Z" hostname="tiamat" tests="19" failures="0" errors="0" skipped="0" time="0.017337701">
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; login &gt; should login successfully with valid credentials" time="0.003922869">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; login &gt; should handle connection errors with helpful messages" time="0.001658592">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; login &gt; should handle timeout errors" time="0.000524679">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; login &gt; should handle 401 unauthorized errors" time="0.000371416">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; login &gt; should handle server errors with special character parsing issues" time="0.000434593">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; login &gt; should handle generic server errors" time="0.000332273">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; register &gt; should register successfully" time="0.000696437">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; refreshToken &gt; should refresh token successfully" time="0.000384694">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; getCurrentUser &gt; should get current user with valid token" time="0.000581546">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; token management &gt; should store and retrieve tokens" time="0.000254463">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; token management &gt; should remove tokens" time="0.000259448">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; token management &gt; should handle corrupted localStorage data" time="0.001108287">
+            <system-err>
+Corrupted auth tokens in localStorage, clearing them
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; token expiration &gt; should correctly identify expired tokens" time="0.000419478">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; token expiration &gt; should correctly identify valid tokens" time="0.000242705">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; token expiration &gt; should handle malformed tokens" time="0.000391716">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; password reset flow &gt; should request password reset" time="0.000408264">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; password reset flow &gt; should reset password with token" time="0.000327583">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; email verification &gt; should verify email with token" time="0.000324033">
+        </testcase>
+        <testcase classname="src/services/__tests__/auth.service.test.ts" name="AuthService &gt; logout &gt; should logout successfully" time="0.000281248">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/services/__tests__/mcp.service.test.ts" timestamp="2025-09-28T11:54:28.306Z" hostname="tiamat" tests="20" failures="0" errors="0" skipped="0" time="0.015933313">
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; customer operations &gt; should create customer successfully" time="0.003530028">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; customer operations &gt; should find customers with filters" time="0.000933142">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; customer operations &gt; should get customer by ID" time="0.00031057">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; customer operations &gt; should update customer" time="0.000385458">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; customer operations &gt; should delete customer" time="0.000253882">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; quote operations &gt; should create quote with financial calculations" time="0.001294539">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; quote operations &gt; should send quote to customer" time="0.000184673">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; quote operations &gt; should track quote status" time="0.000182472">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; invoice operations &gt; should create invoice from quote" time="0.000226906">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; invoice operations &gt; should create standalone invoice" time="0.000172081">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; invoice operations &gt; should send invoice to customer" time="0.000154174">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; payment operations &gt; should process payment with correct amount verification" time="0.000190184">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; payment operations &gt; should track payment status" time="0.000167462">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; analytics and reporting &gt; should generate revenue analytics" time="0.00023151">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; analytics and reporting &gt; should detect billing anomalies" time="0.000204591">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; complete workflow operations &gt; should create complete customer and quote workflow" time="0.000243195">
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; error handling &gt; should handle MCP tool call failures" time="0.001892995">
+            <system-err>
+MCP tool call failed for get_customer_overview: Error: Tool execution failed
+    at MCPService.callTool [90m(/home/eric/Projects/accounting-frontend/[39msrc/services/mcp.service.ts:50:15[90m)[39m
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; error handling &gt; should handle network errors" time="0.000644408">
+            <system-err>
+MCP tool call failed for get_customer_overview: Error: Network error
+    at [90m/home/eric/Projects/accounting-frontend/[39msrc/services/__tests__/mcp.service.test.ts:484:44
+    at [90mfile:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:155:11
+    at [90mfile:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:752:26
+    at [90mfile:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:1897:20
+    at new Promise (&lt;anonymous&gt;)
+    at runWithTimeout [90m(file:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:1863:10[90m)[39m
+    at runTest [90m(file:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:1574:12[90m)[39m
+    at runSuite [90m(file:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:1729:8[90m)[39m
+    at runSuite [90m(file:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:1729:8[90m)[39m
+    at runSuite [90m(file:///home/eric/Projects/accounting-frontend/[39mnode_modules/[4m@vitest/runner[24m/dist/chunk-hooks.js:1729:8[90m)[39m
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; error handling &gt; should handle server error responses" time="0.000476602">
+            <system-err>
+MCP tool call failed for get_customer_overview: { response: { data: { message: [32m&apos;Internal server error&apos;[39m } } }
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/services/__tests__/mcp.service.test.ts" name="MCPService &gt; smart search functionality &gt; should perform smart search across multiple entities" time="0.000369287">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/forms/__tests__/LoginForm.test.tsx" timestamp="2025-09-28T11:54:28.307Z" hostname="tiamat" tests="23" failures="23" errors="0" skipped="0" time="0.007941137">
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; rendering &gt; should render login form with all fields" time="0.001438407">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; rendering &gt; should have proper form accessibility" time="0.000338101">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; rendering &gt; should show password toggle button" time="0.000181009">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; form validation &gt; should validate email format" time="0.000280932">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; form validation &gt; should require password" time="0.000224217">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; form validation &gt; should validate both fields simultaneously" time="0.000201731">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; password visibility toggle &gt; should toggle password visibility" time="0.000199036">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; password visibility toggle &gt; should disable toggle when form is loading" time="0.00026225">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; form submission &gt; should submit valid credentials" time="0.000236996">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; form submission &gt; should handle login success" time="0.000196634">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; form submission &gt; should handle login failure" time="0.000160758">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; loading states &gt; should show loading state during submission" time="0.000140986">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; loading states &gt; should disable form inputs during loading" time="0.000154267">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; error handling &gt; should display authentication errors" time="0.000150548">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; error handling &gt; should display network error messages" time="0.000136638">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; error handling &gt; should clear errors when form is re-submitted" time="0.000136503">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; accessibility and keyboard navigation &gt; should support keyboard navigation" time="0.000145774">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; accessibility and keyboard navigation &gt; should submit form on Enter key" time="0.000139303">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; accessibility and keyboard navigation &gt; should have proper ARIA labels" time="0.000135418">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; integration with authentication flow &gt; should work with real authentication service" time="0.000137537">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; custom styling and className &gt; should apply custom className" time="0.000135465">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; security considerations &gt; should not expose sensitive data in DOM" time="0.000140224">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+        <testcase classname="src/components/forms/__tests__/LoginForm.test.tsx" name="LoginForm &gt; security considerations &gt; should handle special characters in password safely" time="0.000132954">
+            <failure message="mockUseAuth.mockReturnValue is not a function" type="TypeError">
+TypeError: mockUseAuth.mockReturnValue is not a function
+ ❯ src/components/forms/__tests__/LoginForm.test.tsx:23:17
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

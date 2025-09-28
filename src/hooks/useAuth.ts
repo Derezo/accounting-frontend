@@ -22,9 +22,9 @@ export const useAuth = () => {
     if (!user) return false
 
     const roleHierarchy: Record<UserRole, number> = {
-      READONLY: 1,
-      CONTRACTOR: 2,
-      EMPLOYEE: 3,
+      VIEWER: 1,
+      EMPLOYEE: 2,
+      ACCOUNTANT: 3,
       MANAGER: 4,
       ADMIN: 5,
       SUPER_ADMIN: 6,
@@ -36,10 +36,12 @@ export const useAuth = () => {
   const hasPermission = (permission: string): boolean => {
     if (!user) return false
 
-    // Define permissions based on roles
+    // Define permissions based on roles - aligned with backend API capabilities
     const rolePermissions: Record<UserRole, string[]> = {
-      SUPER_ADMIN: ['*'], // All permissions
+      SUPER_ADMIN: ['*'], // All permissions - system administration
+
       ADMIN: [
+        // Organization operations, team management, financial oversight
         'customers:read',
         'customers:write',
         'customers:delete',
@@ -52,40 +54,90 @@ export const useAuth = () => {
         'payments:read',
         'payments:write',
         'payments:delete',
+        'projects:read',
+        'projects:write',
+        'projects:delete',
+        'appointments:read',
+        'appointments:write',
+        'appointments:delete',
         'analytics:read',
+        'analytics:write',
         'users:read',
         'users:write',
+        'users:delete',
+        'organization:read',
+        'organization:write',
+        'reports:read',
+        'reports:write',
+        'audit:read',
       ],
+
       MANAGER: [
+        // Project oversight, customer management, performance tracking
         'customers:read',
         'customers:write',
         'quotes:read',
         'quotes:write',
+        'quotes:delete',
         'invoices:read',
         'invoices:write',
         'payments:read',
         'payments:write',
+        'projects:read',
+        'projects:write',
+        'appointments:read',
+        'appointments:write',
         'analytics:read',
+        'reports:read',
+        'users:read',
       ],
+
+      ACCOUNTANT: [
+        // Financial operations, payment processing, compliance
+        'customers:read',
+        'customers:write',
+        'quotes:read',
+        'invoices:read',
+        'invoices:write',
+        'invoices:delete',
+        'payments:read',
+        'payments:write',
+        'payments:delete',
+        'projects:read',
+        'analytics:read',
+        'reports:read',
+        'reports:write',
+        'etransfer:read',
+        'etransfer:write',
+        'manual-payment:read',
+        'manual-payment:write',
+        'payment-analytics:read',
+      ],
+
       EMPLOYEE: [
+        // Task execution, time tracking, customer interaction
         'customers:read',
         'customers:write',
         'quotes:read',
         'quotes:write',
         'invoices:read',
         'payments:read',
+        'projects:read',
+        'projects:write',
+        'appointments:read',
+        'appointments:write',
       ],
-      CONTRACTOR: [
+
+      VIEWER: [
+        // Read-only access, report viewing
         'customers:read',
         'quotes:read',
         'invoices:read',
         'payments:read',
-      ],
-      READONLY: [
-        'customers:read',
-        'quotes:read',
-        'invoices:read',
-        'payments:read',
+        'projects:read',
+        'appointments:read',
+        'analytics:read',
+        'reports:read',
       ],
     }
 

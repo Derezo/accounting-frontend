@@ -1,15 +1,26 @@
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
+import * as z from 'zod'
 import { useState } from 'react'
-import { Loader2 } from 'lucide-react'
+import { Save } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Switch } from '@/components/ui/switch'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Textarea } from '@/components/ui/textarea'
 import { useCreateCustomer, useUpdateCustomer } from '@/hooks/useAPI'
-import { Customer, CustomerType, CustomerTier, BusinessType } from '@/types/api'
+import { Customer, CustomerType, CustomerTier, CreateCustomerRequest, UpdateCustomerRequest } from '@/types/api'
+import { useFormErrorHandling } from '@/hooks/useErrorHandling'
+import { ValidationErrorSummary, FieldError } from '@/components/error/ErrorDisplay'
+import { useLoadingState } from '@/hooks/useLoadingStates'
+import {
+  createCustomerSchema,
+  updateCustomerSchema,
+  CreateCustomerFormData,
+  UpdateCustomerFormData
+} from '@/lib/validation-schemas'
 
 const customerSchema = z.object({
   type: z.enum(['PERSON', 'BUSINESS']),

@@ -15,9 +15,9 @@ export type UserRole =
   | "SUPER_ADMIN"
   | "ADMIN"
   | "MANAGER"
+  | "ACCOUNTANT"
   | "EMPLOYEE"
-  | "CONTRACTOR"
-  | "READONLY"
+  | "VIEWER"
 
 export interface AuthTokens {
   accessToken: string

@@ -12,7 +12,14 @@ export function formatCurrency(amount: number, currency = "USD"): string {
   }).format(amount)
 }
 
-export function formatDate(date: string | Date): string {
+export function formatDate(date: string | Date, compact = false): string {
+  if (compact) {
+    return new Intl.DateTimeFormat("en-US", {
+      month: "short",
+      day: "numeric",
+    }).format(new Date(date))
+  }
+
   return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "long",

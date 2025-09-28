@@ -8,6 +8,15 @@ import {
   BarChart3,
   Settings,
   X,
+  FolderOpen,
+  Calendar,
+  TrendingUp,
+  FileSpreadsheet,
+  DollarSign,
+  Banknote,
+  UserCog,
+  Building,
+  Shield,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -18,13 +27,17 @@ interface SidebarProps {
   onClose: () => void
 }
 
+// Navigation organized by functional areas and role access
 const navigation = [
+  // Core Operations (All Users)
   {
     name: 'Dashboard',
     href: '/dashboard',
     icon: LayoutDashboard,
-    permission: 'dashboard:read',
+    permission: 'customers:read', // Everyone with access can see dashboard
   },
+
+  // Customer Lifecycle Management
   {
     name: 'Customers',
     href: '/customers',
@@ -38,6 +51,20 @@ const navigation = [
     permission: 'quotes:read',
   },
   {
+    name: 'Appointments',
+    href: '/appointments',
+    icon: Calendar,
+    permission: 'appointments:read',
+  },
+  {
+    name: 'Projects',
+    href: '/projects',
+    icon: FolderOpen,
+    permission: 'projects:read',
+  },
+
+  // Financial Operations
+  {
     name: 'Invoices',
     href: '/invoices',
     icon: Receipt,
@@ -49,6 +76,22 @@ const navigation = [
     icon: CreditCard,
     permission: 'payments:read',
   },
+
+  // Accountant-Specific Tools
+  {
+    name: 'e-Transfer',
+    href: '/etransfer',
+    icon: DollarSign,
+    permission: 'etransfer:read',
+  },
+  {
+    name: 'Manual Payments',
+    href: '/manual-payments',
+    icon: Banknote,
+    permission: 'manual-payment:read',
+  },
+
+  // Analytics & Reporting
   {
     name: 'Analytics',
     href: '/analytics',
@@ -56,10 +99,30 @@ const navigation = [
     permission: 'analytics:read',
   },
   {
-    name: 'Settings',
-    href: '/settings',
-    icon: Settings,
-    permission: 'settings:read',
+    name: 'Reports',
+    href: '/reports',
+    icon: FileSpreadsheet,
+    permission: 'reports:read',
+  },
+
+  // Administration (Admin+)
+  {
+    name: 'Users',
+    href: '/admin/users',
+    icon: UserCog,
+    permission: 'users:read',
+  },
+  {
+    name: 'Organization',
+    href: '/admin/organization',
+    icon: Building,
+    permission: 'organization:read',
+  },
+  {
+    name: 'Audit Trail',
+    href: '/admin/audit',
+    icon: Shield,
+    permission: 'audit:read',
   },
 ]
 

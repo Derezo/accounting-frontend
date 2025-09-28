@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Plus, Send, Edit, Trash2, Eye, Calculator } from 'lucide-react'
+import { Plus, Send, Edit, Trash2, Eye, Calculator, Check, X, FileText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -22,7 +22,7 @@ import {
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { QuoteFilters } from '@/components/business/QuoteFilters'
 import { EstimateCalculator } from '@/components/business/EstimateCalculator'
-import { useQuotes, useSendQuote } from '@/hooks/useAPI'
+import { useQuotes, useSendQuote, useAcceptQuote, useRejectQuote, useConvertQuoteToInvoice } from '@/hooks/useAPI'
 import { formatCurrency, formatDate } from '@/lib/utils'
 import { Quote, QuoteFilters as IQuoteFilters } from '@/types/api'
 
@@ -32,6 +32,11 @@ export function QuotesPage() {
   const [showCreateDialog, setShowCreateDialog] = useState(false)
   const [showEditDialog, setShowEditDialog] = useState(false)
   const [showEstimateDialog, setShowEstimateDialog] = useState(false)
+  const [actionConfirm, setActionConfirm] = useState<{
+    type: 'accept' | 'reject' | 'convert'
+    quote: Quote
+    note?: string
+  } | null>(null)
 
   const { data: quotesData, isLoading, error } = useQuotes({
     ...filters,
@@ -40,6 +45,9 @@ export function QuotesPage() {
   })
 
   const sendQuote = useSendQuote()
+  const acceptQuote = useAcceptQuote()
+  const rejectQuote = useRejectQuote()
+  const convertQuoteToInvoice = useConvertQuoteToInvoice()
 
   const handleEdit = (quote: Quote) => {
     setSelectedQuote(quote)
@@ -66,7 +74,7 @@ export function QuotesPage() {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'APPROVED':
+      case 'ACCEPTED':
         return 'success'
       case 'SENT':
         return 'warning'
@@ -78,6 +86,8 @@ export function QuotesPage() {
         return 'destructive'
       case 'DRAFT':
         return 'outline'
+      case 'REVISED':
+        return 'secondary'
       default:
         return 'outline'
     }
@@ -88,7 +98,32 @@ export function QuotesPage() {
   }
 
   const isQuoteSendable = (status: string) => {
-    return ['DRAFT', 'REJECTED'].includes(status)
+    return ['DRAFT', 'REJECTED', 'REVISED'].includes(status)
+  }
+
+  const isQuoteApprovable = (status: string) => {
+    return ['SENT', 'VIEWED'].includes(status)
+  }
+
+  const isQuoteConvertible = (status: string) => {
+    return status === 'ACCEPTED'
+  }
+
+  const handleAccept = async (quote: Quote) => {
+    const note = prompt('Add an acceptance note (optional):')
+    await acceptQuote.mutateAsync({ quoteId: quote.id, acceptanceNote: note || undefined })
+  }
+
+  const handleReject = async (quote: Quote) => {
+    const reason = prompt('Provide a rejection reason (optional):')
+    await rejectQuote.mutateAsync({ quoteId: quote.id, rejectionReason: reason || undefined })
+  }
+
+  const handleConvertToInvoice = async (quote: Quote) => {
+    const confirmed = confirm(`Convert quote ${quote.quoteNumber} to invoice?`)
+    if (confirmed) {
+      await convertQuoteToInvoice.mutateAsync({ quoteId: quote.id })
+    }
   }
 
   return (
@@ -287,6 +322,42 @@ export function QuotesPage() {
                             title="Send Quote"
                           >
                             <Send className="h-4 w-4" />
+                          </Button>
+                        )}
+                        {isQuoteApprovable(quote.status) && (
+                          <>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              onClick={() => handleAccept(quote)}
+                              disabled={acceptQuote.isPending}
+                              title="Accept Quote"
+                              className="text-green-600 hover:text-green-700"
+                            >
+                              <Check className="h-4 w-4" />
+                            </Button>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              onClick={() => handleReject(quote)}
+                              disabled={rejectQuote.isPending}
+                              title="Reject Quote"
+                              className="text-red-600 hover:text-red-700"
+                            >
+                              <X className="h-4 w-4" />
+                            </Button>
+                          </>
+                        )}
+                        {isQuoteConvertible(quote.status) && (
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={() => handleConvertToInvoice(quote)}
+                            disabled={convertQuoteToInvoice.isPending}
+                            title="Convert to Invoice"
+                            className="text-blue-600 hover:text-blue-700"
+                          >
+                            <FileText className="h-4 w-4" />
                           </Button>
                         )}
                         {isQuoteEditable(quote.status) && (

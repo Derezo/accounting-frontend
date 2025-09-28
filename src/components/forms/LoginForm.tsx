@@ -103,6 +103,16 @@ export function LoginForm({ onSuccess, className }: LoginFormProps) {
             {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
             Sign in
           </Button>
+
+          <div className="text-center">
+            <button
+              type="button"
+              className="text-sm text-primary hover:underline"
+              onClick={() => window.location.href = '/password-reset'}
+            >
+              Forgot your password?
+            </button>
+          </div>
         </form>
       </CardContent>
     </Card>

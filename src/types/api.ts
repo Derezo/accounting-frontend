@@ -20,15 +20,33 @@ export interface PaginatedResponse<T = any> {
 
 // Common types
 export type CustomerType = 'PERSON' | 'BUSINESS'
-export type CustomerTier = 'PERSONAL' | 'SMALL_BUSINESS' | 'ENTERPRISE' | 'EMERGENCY'
-export type CustomerStatus = 'PROSPECT' | 'ACTIVE' | 'INACTIVE' | 'ARCHIVED'
+export type CustomerTier = 'PERSONAL' | 'BUSINESS' | 'ENTERPRISE' | 'EMERGENCY'
+export type CustomerStatus = 'PROSPECT' | 'ACTIVE' | 'INACTIVE' | 'SUSPENDED' | 'ARCHIVED'
 export type BusinessType = 'SOLE_PROPRIETORSHIP' | 'PARTNERSHIP' | 'CORPORATION' | 'LLC' | 'NON_PROFIT' | 'GOVERNMENT'
 
-export type QuoteStatus = 'DRAFT' | 'SENT' | 'VIEWED' | 'APPROVED' | 'REJECTED' | 'EXPIRED'
-export type InvoiceStatus = 'DRAFT' | 'SENT' | 'VIEWED' | 'PAID' | 'OVERDUE' | 'CANCELLED'
+export type QuoteStatus = 'DRAFT' | 'SENT' | 'VIEWED' | 'ACCEPTED' | 'REJECTED' | 'EXPIRED' | 'REVISED'
+export type InvoiceStatus = 'DRAFT' | 'SENT' | 'VIEWED' | 'PARTIALLY_PAID' | 'PAID' | 'OVERDUE' | 'CANCELLED' | 'REFUNDED'
 export type PaymentStatus = 'PENDING' | 'PROCESSING' | 'COMPLETED' | 'FAILED' | 'CANCELLED' | 'REFUNDED'
-export type PaymentMethod = 'CREDIT_CARD' | 'BANK_TRANSFER' | 'PAYPAL' | 'STRIPE' | 'CASH' | 'CHECK' | 'OTHER'
-export type ProjectStatus = 'PLANNED' | 'IN_PROGRESS' | 'ON_HOLD' | 'COMPLETED' | 'CANCELLED'
+export type PaymentMethod = 'STRIPE_CARD' | 'INTERAC_ETRANSFER' | 'BANK_TRANSFER' | 'CASH' | 'CHEQUE' | 'OTHER'
+export type ProjectStatus = 'QUOTED' | 'APPROVED' | 'SCHEDULED' | 'IN_PROGRESS' | 'ON_HOLD' | 'COMPLETED' | 'CANCELLED'
+export type AppointmentStatus = 'SCHEDULED' | 'CONFIRMED' | 'IN_PROGRESS' | 'COMPLETED' | 'CANCELLED' | 'NO_SHOW'
+export type AppointmentType = 'CONSULTATION' | 'SITE_VISIT' | 'FOLLOW_UP' | 'EMERGENCY'
+export type AppointmentPriority = 'LOW' | 'MEDIUM' | 'HIGH'
+export type ProjectType = 'CONSULTING' | 'DEVELOPMENT' | 'MAINTENANCE' | 'AUDIT' | 'TRAINING' | 'SUPPORT'
+export type ProjectPriority = 'LOW' | 'MEDIUM' | 'HIGH'
+export type ETransferStatus = 'PENDING' | 'SENT' | 'RECEIVED' | 'EXPIRED' | 'CANCELLED'
+export type PaymentPlanStatus = 'ACTIVE' | 'COMPLETED' | 'CANCELLED' | 'DEFAULTED'
+
+// User role types to match backend
+export type UserRole = 'SUPER_ADMIN' | 'ADMIN' | 'MANAGER' | 'ACCOUNTANT' | 'EMPLOYEE' | 'VIEWER'
+
+// Organization types
+export type OrganizationType = 'SINGLE_BUSINESS' | 'MULTI_LOCATION' | 'FRANCHISE' | 'ENTERPRISE'
+
+// Audit types
+export type AuditAction = 'CREATE' | 'UPDATE' | 'DELETE' | 'VIEW' | 'LOGIN' | 'LOGOUT' | 'EXPORT' | 'IMPORT' | 'REFUND' | 'AUTHORIZE'
+export type AuditCategory = 'AUTH' | 'DATA' | 'SYSTEM' | 'SECURITY' | 'FINANCIAL'
+export type AuditSeverity = 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL'
 
 // Customer interfaces
 export interface Address {
@@ -459,4 +477,360 @@ export interface InvoicePdfOptions {
   organization: OrganizationSettings
   watermark?: string
   language?: 'en' | 'fr' | 'es' // Extensible for i18n
+}
+
+// Appointment Management interfaces
+export interface Appointment {
+  id: string
+  customerId: string
+  customer?: Customer
+  projectId?: string
+  project?: Project
+
+  title: string
+  description?: string
+  type: AppointmentType
+  status: AppointmentStatus
+
+  // Scheduling
+  startTime: string
+  endTime: string
+  duration: number // minutes
+  timezone: string
+
+  // Location (virtual or physical)
+  location?: {
+    type: 'virtual' | 'physical' | 'phone'
+    address?: Address
+    meetingUrl?: string
+    phone?: string
+    instructions?: string
+  }
+
+  // Participants
+  attendees: Array<{
+    id: string
+    name: string
+    email: string
+    role: 'organizer' | 'required' | 'optional'
+    status: 'pending' | 'accepted' | 'declined' | 'tentative'
+  }>
+
+  // Preparation and follow-up
+  agenda?: string
+  requirements?: string[]
+  notes?: string
+  followUpRequired: boolean
+  followUpDate?: string
+
+  // Billing
+  billable: boolean
+  hourlyRate?: number
+  estimatedCost?: number
+
+  // Notifications
+  reminders: Array<{
+    id: string
+    type: 'email' | 'sms' | 'push'
+    timing: number // minutes before
+    sent: boolean
+  }>
+
+  // Metadata
+  organizationId: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface CreateAppointmentRequest {
+  customerId: string
+  projectId?: string
+  title: string
+  description?: string
+  type: AppointmentType
+  startTime: string
+  endTime: string
+  timezone: string
+  location?: Appointment['location']
+  attendees?: Omit<Appointment['attendees'][0], 'id' | 'status'>[]
+  agenda?: string
+  requirements?: string[]
+  billable?: boolean
+  hourlyRate?: number
+  reminders?: Omit<Appointment['reminders'][0], 'id' | 'sent'>[]
+}
+
+export interface UpdateAppointmentRequest extends Partial<CreateAppointmentRequest> {
+  status?: AppointmentStatus
+  notes?: string
+  followUpRequired?: boolean
+  followUpDate?: string
+}
+
+export interface AppointmentFilters {
+  customerId?: string
+  projectId?: string
+  type?: AppointmentType
+  status?: AppointmentStatus
+  dateFrom?: string
+  dateTo?: string
+  billable?: boolean
+  search?: string
+}
+
+// Project Management interfaces
+export interface Project {
+  id: string
+  customerId: string
+  customer?: Customer
+
+  name: string
+  description?: string
+  status: ProjectStatus
+  priority: 'low' | 'medium' | 'high' | 'critical'
+
+  // Timeline
+  startDate?: string
+  endDate?: string
+  estimatedHours?: number
+  actualHours?: number
+
+  // Financial
+  budget?: number
+  totalCost?: number
+  hourlyRate?: number
+  fixedPrice?: boolean
+
+  // Team and assignments
+  assignedUsers: Array<{
+    userId: string
+    role: string
+    hourlyRate?: number
+    allocation?: number // percentage
+  }>
+
+  // Progress tracking
+  progress: number // 0-100
+  milestones: Array<{
+    id: string
+    name: string
+    description?: string
+    dueDate: string
+    completed: boolean
+    completedAt?: string
+  }>
+
+  // Resources and deliverables
+  deliverables: Array<{
+    id: string
+    name: string
+    description?: string
+    type: 'document' | 'software' | 'service' | 'other'
+    status: 'pending' | 'in_progress' | 'completed' | 'delivered'
+    dueDate?: string
+    deliveredAt?: string
+  }>
+
+  // Documentation
+  requirements?: string
+  notes?: string
+  riskAssessment?: string
+
+  // Related entities
+  quoteId?: string
+  invoiceIds?: string[]
+
+  // Metadata
+  organizationId: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface CreateProjectRequest {
+  customerId: string
+  name: string
+  description?: string
+  priority?: Project['priority']
+  startDate?: string
+  endDate?: string
+  estimatedHours?: number
+  budget?: number
+  hourlyRate?: number
+  fixedPrice?: boolean
+  assignedUsers?: Project['assignedUsers']
+  requirements?: string
+  quoteId?: string
+}
+
+export interface UpdateProjectRequest extends Partial<CreateProjectRequest> {
+  status?: ProjectStatus
+  actualHours?: number
+  totalCost?: number
+  progress?: number
+  notes?: string
+  riskAssessment?: string
+}
+
+export interface ProjectFilters {
+  customerId?: string
+  status?: ProjectStatus
+  priority?: Project['priority']
+  assignedUserId?: string
+  dateFrom?: string
+  dateTo?: string
+  search?: string
+}
+
+// Enhanced Payment interfaces
+export interface ETransfer {
+  id: string
+  customerId: string
+  customer?: Customer
+  invoiceId?: string
+  invoice?: Invoice
+
+  amount: number
+  currency: string
+
+  status: ETransferStatus
+  referenceNumber: string
+
+  // e-Transfer details
+  recipientEmail: string
+  securityQuestion: string
+  securityAnswer: string // encrypted
+
+  // Processing
+  sentAt?: string
+  receivedAt?: string
+  expiresAt: string
+
+  // Banking
+  bankReference?: string
+  fees: number
+
+  // Notifications
+  emailSent: boolean
+  confirmationSent: boolean
+
+  // Metadata
+  notes?: string
+  organizationId: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface CreateETransferRequest {
+  customerId: string
+  invoiceId?: string
+  amount: number
+  recipientEmail: string
+  securityQuestion: string
+  securityAnswer: string
+  expiresAt?: string
+  notes?: string
+}
+
+export interface ETransferFilters {
+  customerId?: string
+  invoiceId?: string
+  status?: ETransferStatus
+  dateFrom?: string
+  dateTo?: string
+  minAmount?: number
+  maxAmount?: number
+  search?: string
+}
+
+export interface PaymentPlan {
+  id: string
+  customerId: string
+  customer?: Customer
+  invoiceId?: string
+  invoice?: Invoice
+
+  totalAmount: number
+  remainingAmount: number
+  currency: string
+
+  status: PaymentPlanStatus
+
+  // Schedule
+  installments: Array<{
+    id: string
+    sequenceNumber: number
+    amount: number
+    dueDate: string
+    status: 'pending' | 'paid' | 'overdue' | 'skipped'
+    paidAt?: string
+    paymentId?: string
+  }>
+
+  // Terms
+  interestRate?: number
+  lateFeeAmount?: number
+  lateFeePercentage?: number
+
+  // Metadata
+  notes?: string
+  organizationId: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface CreatePaymentPlanRequest {
+  customerId: string
+  invoiceId?: string
+  totalAmount: number
+  installments: Array<{
+    amount: number
+    dueDate: string
+  }>
+  interestRate?: number
+  lateFeeAmount?: number
+  lateFeePercentage?: number
+  notes?: string
+}
+
+// User Management interfaces
+export interface User {
+  id: string
+  email: string
+  firstName: string
+  lastName: string
+  role: UserRole
+  organizationId: string
+  organizationName?: string
+  isActive: boolean
+  emailVerified?: boolean
+  phone?: string
+  avatar?: string
+  lastLoginAt?: string
+  lastLoginIp?: string
+  failedAttempts?: number
+  lockedUntil?: string
+  createdAt: string
+  updatedAt: string
+}
+
+export interface CreateUserRequest {
+  email: string
+  firstName: string
+  lastName: string
+  role: UserRole
+  phone?: string
+  isActive?: boolean
+  password: string
+  sendInvite?: boolean
+}
+
+export interface UpdateUserRequest extends Partial<CreateUserRequest> {
+  isActive?: boolean
+}
+
+export interface UserFilters {
+  role?: UserRole
+  isActive?: boolean
+  search?: string
+  emailVerified?: boolean
 }

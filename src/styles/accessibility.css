@@ -1,0 +1,360 @@
+/* Accessibility-specific CSS styles */
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only:focus,
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Skip links */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* High contrast mode */
+.high-contrast {
+  --background: #ffffff;
+  --foreground: #000000;
+  --muted: #f5f5f5;
+  --muted-foreground: #666666;
+  --primary: #0000ff;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f5;
+  --secondary-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #000000;
+  --input: #ffffff;
+  --ring: #0000ff;
+}
+
+.high-contrast * {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.high-contrast button,
+.high-contrast input,
+.high-contrast select,
+.high-contrast textarea {
+  border: 2px solid #000000 !important;
+}
+
+.high-contrast button:focus,
+.high-contrast input:focus,
+.high-contrast select:focus,
+.high-contrast textarea:focus,
+.high-contrast a:focus {
+  outline: 3px solid #0000ff !important;
+  outline-offset: 2px !important;
+}
+
+.high-contrast a {
+  color: #0000ff !important;
+  text-decoration: underline !important;
+}
+
+.high-contrast a:visited {
+  color: #800080 !important;
+}
+
+/* Reduced motion */
+.reduce-motion,
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* Respect user's motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Enhanced focus indicators */
+.focus-enhanced:focus-within {
+  outline: 4px solid #0066cc !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 8px rgba(0, 102, 204, 0.2) !important;
+}
+
+/* Better button focus states */
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.2);
+}
+
+/* Improved link focus states */
+a:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+  background-color: rgba(0, 102, 204, 0.1);
+  border-radius: 2px;
+}
+
+/* Form field focus enhancements */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 1px;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+}
+
+/* Error state enhancements */
+[aria-invalid="true"],
+.error {
+  border-color: #d32f2f !important;
+  box-shadow: 0 0 0 1px #d32f2f;
+}
+
+[aria-invalid="true"]:focus,
+.error:focus {
+  outline: 2px solid #d32f2f;
+  outline-offset: 1px;
+  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.2);
+}
+
+/* Live region styling */
+[aria-live] {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Tooltip accessibility */
+[role="tooltip"] {
+  max-width: 200px;
+  word-wrap: break-word;
+  z-index: 9999;
+}
+
+/* Modal and dialog accessibility */
+[role="dialog"],
+[role="alertdialog"] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Dialog backdrop */
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Table accessibility */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+th[aria-sort="ascending"]::after {
+  content: " ↑";
+}
+
+th[aria-sort="descending"]::after {
+  content: " ↓";
+}
+
+/* Loading states */
+[aria-busy="true"] {
+  cursor: wait;
+}
+
+/* Required field indicators */
+[aria-required="true"]::after,
+.required::after {
+  content: " *";
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Status indicators */
+.status-success {
+  color: #2e7d32;
+}
+
+.status-warning {
+  color: #f57c00;
+}
+
+.status-error {
+  color: #d32f2f;
+}
+
+.status-info {
+  color: #1976d2;
+}
+
+/* Print accessibility */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+}
+
+/* Color-blind friendly status indicators */
+.status-indicator {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.status-indicator::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  content: "";
+}
+
+.status-indicator.success::before {
+  background-color: #4caf50;
+  content: "✓";
+  color: white;
+  text-align: center;
+  line-height: 1em;
+  font-size: 0.7em;
+}
+
+.status-indicator.warning::before {
+  background-color: #ff9800;
+  content: "!";
+  color: white;
+  text-align: center;
+  line-height: 1em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.status-indicator.error::before {
+  background-color: #f44336;
+  content: "✗";
+  color: white;
+  text-align: center;
+  line-height: 1em;
+  font-size: 0.7em;
+}
+
+/* Touch target improvements */
+@media (pointer: coarse) {
+  button,
+  [role="button"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Dark mode high contrast adjustments */
+.dark.high-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: #1a1a1a;
+  --muted-foreground: #cccccc;
+  --primary: #66b3ff;
+  --primary-foreground: #000000;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #ffffff;
+  --destructive: #ff6666;
+  --destructive-foreground: #000000;
+  --border: #ffffff;
+  --input: #000000;
+  --ring: #66b3ff;
+}
+
+/* Animation utilities that respect motion preferences */
+.animate-fade-in {
+  animation: fadeIn var(--animation-duration, 200ms) ease-in-out;
+}
+
+.animate-slide-in {
+  animation: slideIn var(--animation-duration, 200ms) ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Custom properties for dynamic theming */
+:root {
+  --animation-duration: 200ms;
+  --focus-ring-width: 2px;
+  --focus-ring-color: #0066cc;
+  --focus-ring-offset: 2px;
+}

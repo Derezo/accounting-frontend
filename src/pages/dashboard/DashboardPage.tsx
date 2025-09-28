@@ -8,9 +8,10 @@ import {
   useQuotes,
   useInvoices,
   usePayments,
-  useRevenueAnalytics,
-  useCustomerAnalytics,
-  usePaymentAnalytics,
+  // Analytics endpoints not available yet in accounting-api
+  // useRevenueAnalytics,
+  // useCustomerAnalytics,
+  // usePaymentAnalytics,
 } from '@/hooks/useAPI'
 import {
   Users,
@@ -27,9 +28,12 @@ import {
   Calendar,
 } from 'lucide-react'
 import { formatCurrency, formatDate } from '@/lib/utils'
+import { ResponsiveContainer, ResponsiveGrid, ResponsiveStack, ResponsiveShow } from '@/components/layout/ResponsiveContainer'
+import { useBreakpoint } from '@/hooks/useBreakpoint'
 
 export function DashboardPage() {
   const { user } = useAuth()
+  const { isMobile, isTablet } = useBreakpoint()
   const [period, setPeriod] = useState<'daily' | 'weekly' | 'monthly' | 'yearly'>('monthly')
 
   // Data fetching
@@ -37,9 +41,11 @@ export function DashboardPage() {
   const { data: quotesData } = useQuotes({ limit: 1000 })
   const { data: invoicesData } = useInvoices({ limit: 1000 })
   const { data: paymentsData } = usePayments({ limit: 1000 })
-  const { data: revenueAnalytics } = useRevenueAnalytics(period)
-  const { data: customerAnalytics } = useCustomerAnalytics()
-  const { data: paymentAnalytics } = usePaymentAnalytics()
+
+  // Analytics endpoints not available yet in accounting-api
+  // const { data: revenueAnalytics } = useRevenueAnalytics(period)
+  // const { data: customerAnalytics } = useCustomerAnalytics()
+  // const { data: paymentAnalytics } = usePaymentAnalytics()
 
   // Calculate real-time statistics
   const calculateStats = () => {
@@ -83,14 +89,15 @@ export function DashboardPage() {
 
   const stats = calculateStats()
 
-  // Helper function to get revenue analytics data
-  const getRevenueData = () => {
-    if (!revenueAnalytics) return null
-    const data = Array.isArray(revenueAnalytics) ? revenueAnalytics[0] : revenueAnalytics
-    return data || null
-  }
+  // Helper function to get revenue analytics data (disabled - endpoints not available)
+  // const getRevenueData = () => {
+  //   if (!revenueAnalytics) return null
+  //   const data = Array.isArray(revenueAnalytics) ? revenueAnalytics[0] : revenueAnalytics
+  //   return data || null
+  // }
 
-  const revenueData = getRevenueData()
+  // const revenueData = getRevenueData()
+  const revenueData = null
 
   // Recent activity from the last 10 items across all entities
   const getRecentActivity = () => {
@@ -179,72 +186,96 @@ export function DashboardPage() {
   ]
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight">
-            Welcome back, {user?.firstName || 'User'}!
-          </h1>
-          <p className="text-muted-foreground">
-            Here's what's happening with your business today.
-          </p>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Button
-            variant={period === 'daily' ? 'default' : 'outline'}
-            size="sm"
-            onClick={() => setPeriod('daily')}
-          >
-            Daily
-          </Button>
-          <Button
-            variant={period === 'weekly' ? 'default' : 'outline'}
-            size="sm"
-            onClick={() => setPeriod('weekly')}
-          >
-            Weekly
-          </Button>
-          <Button
-            variant={period === 'monthly' ? 'default' : 'outline'}
-            size="sm"
-            onClick={() => setPeriod('monthly')}
-          >
-            Monthly
-          </Button>
-          <Button
-            variant={period === 'yearly' ? 'default' : 'outline'}
-            size="sm"
-            onClick={() => setPeriod('yearly')}
-          >
-            Yearly
-          </Button>
-        </div>
-      </div>
+    <ResponsiveContainer maxWidth="full" padding="md">
+      <div className="space-y-4 md:space-y-6">
+        {/* Header */}
+        <ResponsiveStack
+          direction={{ mobile: 'vertical', tablet: 'horizontal', desktop: 'horizontal' }}
+          justify="between"
+          align="start"
+          spacing="md"
+          className="mb-6"
+        >
+          <div className="space-y-1">
+            <h1 className={`font-bold tracking-tight ${isMobile ? 'text-2xl' : 'text-3xl'}`}>
+              Welcome back, {user?.firstName || 'User'}!
+            </h1>
+            <p className="text-muted-foreground text-sm md:text-base">
+              Here's what's happening with your business today.
+            </p>
+          </div>
 
-      {/* KPI Cards */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {kpiCards.map((kpi) => {
-          const Icon = kpi.icon
-          return (
-            <Card key={kpi.title} className="relative overflow-hidden">
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">{kpi.title}</CardTitle>
-                <div className={`rounded-full p-2 ${kpi.bgColor}`}>
-                  <Icon className={`h-4 w-4 ${kpi.color}`} />
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">{kpi.value}</div>
-                <p className="text-xs text-muted-foreground">{kpi.change}</p>
-              </CardContent>
-            </Card>
-          )
-        })}
-      </div>
+          {/* Period Selector - Mobile vs Desktop Layout */}
+          <ResponsiveShow on={['desktop']}>
+            <div className="flex items-center space-x-2">
+              {(['daily', 'weekly', 'monthly', 'yearly'] as const).map((p) => (
+                <Button
+                  key={p}
+                  variant={period === p ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => setPeriod(p)}
+                  className="capitalize"
+                >
+                  {p}
+                </Button>
+              ))}
+            </div>
+          </ResponsiveShow>
 
-      {/* Revenue Analytics */}
-      {revenueAnalytics && (
+          {/* Mobile Period Selector - Dropdown style */}
+          <ResponsiveShow on={['mobile', 'tablet']}>
+            <div className="grid grid-cols-2 gap-2 w-full md:w-auto">
+              {(['daily', 'weekly', 'monthly', 'yearly'] as const).map((p) => (
+                <Button
+                  key={p}
+                  variant={period === p ? 'default' : 'outline'}
+                  size={isMobile ? 'sm' : 'default'}
+                  onClick={() => setPeriod(p)}
+                  className="capitalize text-xs md:text-sm"
+                >
+                  {p}
+                </Button>
+              ))}
+            </div>
+          </ResponsiveShow>
+        </ResponsiveStack>
+
+        {/* KPI Cards */}
+        <ResponsiveGrid
+          cols={{ xs: 1, sm: 2, md: 2, lg: 4, xl: 4 }}
+          gap="md"
+          className="mb-6"
+        >
+          {kpiCards.map((kpi) => {
+            const Icon = kpi.icon
+            return (
+              <Card
+                key={kpi.title}
+                className="relative overflow-hidden hover:shadow-md transition-shadow duration-200"
+              >
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardTitle className={`font-medium ${isMobile ? 'text-xs' : 'text-sm'}`}>
+                    {kpi.title}
+                  </CardTitle>
+                  <div className={`rounded-full p-2 ${kpi.bgColor}`}>
+                    <Icon className={`${isMobile ? 'h-3 w-3' : 'h-4 w-4'} ${kpi.color}`} />
+                  </div>
+                </CardHeader>
+                <CardContent className={isMobile ? 'pt-2' : ''}>
+                  <div className={`font-bold ${isMobile ? 'text-xl' : 'text-2xl'}`}>
+                    {kpi.value}
+                  </div>
+                  <p className={`text-muted-foreground ${isMobile ? 'text-xs' : 'text-xs'}`}>
+                    {kpi.change}
+                  </p>
+                </CardContent>
+              </Card>
+            )
+          })}
+        </ResponsiveGrid>
+
+      {/* Revenue Analytics - Disabled (endpoints not available) */}
+      {/* {revenueAnalytics && (
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
@@ -291,93 +322,98 @@ export function DashboardPage() {
             </div>
           </CardContent>
         </Card>
-      )}
+      )} */}
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-        {/* Payment Analytics */}
-        {paymentAnalytics && (
-          <Card className="col-span-3">
+        {/* Main Content Grid */}
+        <ResponsiveGrid
+          cols={{ xs: 1, sm: 1, md: 1, lg: 7, xl: 7 }}
+          gap="md"
+          className="mb-6"
+        >
+          {/* Payment Analytics - Disabled (endpoints not available) */}
+          {/* {paymentAnalytics && (
+            <Card className="lg:col-span-3">
+              <CardHeader>
+                <CardTitle className="flex items-center space-x-2">
+                  <CreditCard className="h-5 w-5" />
+                  <span>Payment Analytics</span>
+                </CardTitle>
+                <CardDescription>
+                  Payment processing performance
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Total Payments</span>
+                  <Badge variant="outline">{paymentAnalytics.totalPayments}</Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Success Rate</span>
+                  <Badge variant="secondary">
+                    {((paymentAnalytics.successfulPayments / paymentAnalytics.totalPayments) * 100).toFixed(1)}%
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Failed Payments</span>
+                  <Badge variant="destructive">{paymentAnalytics.failedPayments}</Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Avg. Processing Time</span>
+                  <Badge variant="outline">{paymentAnalytics.averagePaymentTime}h</Badge>
+                </div>
+              </CardContent>
+            </Card>
+          )} */}
+
+          {/* Recent Activity */}
+          <Card className="lg:col-span-7">
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <CreditCard className="h-5 w-5" />
-                <span>Payment Analytics</span>
+              <CardTitle className={`flex items-center space-x-2 ${isMobile ? 'text-base' : 'text-lg'}`}>
+                <Clock className={`${isMobile ? 'h-4 w-4' : 'h-5 w-5'}`} />
+                <span>Recent Activity</span>
               </CardTitle>
-              <CardDescription>
-                Payment processing performance
+              <CardDescription className={isMobile ? 'text-xs' : 'text-sm'}>
+                Latest business activities across all modules
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex justify-between items-center">
-                <span className="text-sm">Total Payments</span>
-                <Badge variant="outline">{paymentAnalytics.totalPayments}</Badge>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm">Success Rate</span>
-                <Badge variant="secondary">
-                  {((paymentAnalytics.successfulPayments / paymentAnalytics.totalPayments) * 100).toFixed(1)}%
-                </Badge>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm">Failed Payments</span>
-                <Badge variant="destructive">{paymentAnalytics.failedPayments}</Badge>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-sm">Avg. Processing Time</span>
-                <Badge variant="outline">{paymentAnalytics.averagePaymentTime}h</Badge>
+            <CardContent>
+              <div className={`${isMobile ? 'space-y-3' : 'space-y-4'}`}>
+                {recentActivity.length === 0 ? (
+                  <div className={`text-center text-muted-foreground ${isMobile ? 'py-6' : 'py-8'}`}>
+                    <Calendar className={`mx-auto mb-2 ${isMobile ? 'h-8 w-8' : 'h-12 w-12'}`} />
+                    <p className={isMobile ? 'text-sm' : 'text-base'}>No recent activity</p>
+                    <p className="text-xs">Activity will appear here as you use the system</p>
+                  </div>
+                ) : (
+                  recentActivity.map((activity, index) => {
+                    const Icon = activity.icon
+                    return (
+                      <div key={index} className={`flex items-center ${isMobile ? 'space-x-2' : 'space-x-3'}`}>
+                        <div className={`rounded-full ${isMobile ? 'p-1.5' : 'p-2'} bg-muted`}>
+                          <Icon className={`${isMobile ? 'h-3 w-3' : 'h-4 w-4'} ${activity.color}`} />
+                        </div>
+                        <div className="flex-1 space-y-1 min-w-0">
+                          <p className={`font-medium leading-none ${isMobile ? 'text-xs' : 'text-sm'}`}>
+                            {activity.title}
+                          </p>
+                          <p className={`text-muted-foreground truncate ${isMobile ? 'text-xs' : 'text-sm'}`}>
+                            {activity.description}
+                          </p>
+                        </div>
+                        <div className={`text-muted-foreground flex-shrink-0 ${isMobile ? 'text-xs' : 'text-xs'}`}>
+                          {isMobile ? formatDate(activity.timestamp, true) : formatDate(activity.timestamp)}
+                        </div>
+                      </div>
+                    )
+                  })
+                )}
               </div>
             </CardContent>
           </Card>
-        )}
+        </ResponsiveGrid>
 
-        {/* Recent Activity */}
-        <Card className="col-span-4">
-          <CardHeader>
-            <CardTitle className="flex items-center space-x-2">
-              <Clock className="h-5 w-5" />
-              <span>Recent Activity</span>
-            </CardTitle>
-            <CardDescription>
-              Latest business activities across all modules
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {recentActivity.length === 0 ? (
-                <div className="text-center py-8 text-muted-foreground">
-                  <Calendar className="h-12 w-12 mx-auto mb-2" />
-                  <p>No recent activity</p>
-                  <p className="text-xs">Activity will appear here as you use the system</p>
-                </div>
-              ) : (
-                recentActivity.map((activity, index) => {
-                  const Icon = activity.icon
-                  return (
-                    <div key={index} className="flex items-center space-x-3">
-                      <div className={`rounded-full p-2 bg-muted`}>
-                        <Icon className={`h-4 w-4 ${activity.color}`} />
-                      </div>
-                      <div className="flex-1 space-y-1">
-                        <p className="text-sm font-medium leading-none">
-                          {activity.title}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {activity.description}
-                        </p>
-                      </div>
-                      <div className="text-xs text-muted-foreground">
-                        {formatDate(activity.timestamp)}
-                      </div>
-                    </div>
-                  )
-                })
-              )}
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Customer Analytics */}
-      {customerAnalytics && (
+      {/* Customer Analytics - Disabled (endpoints not available) */}
+      {/* {customerAnalytics && (
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
@@ -417,7 +453,8 @@ export function DashboardPage() {
             </div>
           </CardContent>
         </Card>
-      )}
-    </div>
+      )} */}
+      </div>
+    </ResponsiveContainer>
   )
 }

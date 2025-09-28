@@ -1,4 +1,4 @@
-import { ReactNode, useEffect } from 'react'
+import { ReactNode } from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
 import { useAuth } from '@/hooks/useAuth'
 import { UserRole } from '@/types/auth'
@@ -15,13 +15,8 @@ export function ProtectedRoute({
   requiredRole,
   requiredPermission,
 }: ProtectedRouteProps) {
-  const { isAuthenticated, isLoading, hasRole, hasPermission, initialize } = useAuth()
+  const { isAuthenticated, isLoading, hasRole, hasPermission } = useAuth()
   const location = useLocation()
-
-  useEffect(() => {
-    // Initialize auth on mount
-    initialize()
-  }, [initialize])
 
   // Show loading spinner while authentication is being checked
   if (isLoading) {

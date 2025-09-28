@@ -1,6 +1,7 @@
 import axios, { AxiosError, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import { authService } from '@/services/auth.service'
 import { useAuthStore } from '@/stores/auth.store'
+import { errorHandler } from '@/lib/error-handler'
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api/v1'
 
@@ -29,7 +30,7 @@ apiClient.interceptors.request.use(
   }
 )
 
-// Response interceptor to handle token refresh
+// Response interceptor to handle token refresh and errors
 apiClient.interceptors.response.use(
   (response: AxiosResponse) => {
     return response
@@ -37,6 +38,7 @@ apiClient.interceptors.response.use(
   async (error: AxiosError) => {
     const originalRequest = error.config as InternalAxiosRequestConfig & { _retry?: boolean }
 
+    // Handle 401 errors with token refresh
     if (error.response?.status === 401 && !originalRequest._retry) {
       originalRequest._retry = true
 
@@ -71,7 +73,25 @@ apiClient.interceptors.response.use(
       }
     }
 
-    return Promise.reject(error)
+    // Convert axios error to AppError for consistent handling
+    const appError = errorHandler.handleAxiosError(error)
+
+    // Add request context for debugging
+    const context = {
+      url: error.config?.url,
+      method: error.config?.method?.toUpperCase(),
+      status: error.response?.status,
+      requestId: error.response?.headers['x-request-id']
+    }
+
+    // Log error with context but don't show toast (let individual handlers decide)
+    errorHandler.handleError(appError, {
+      showToast: false,
+      logError: true,
+      context
+    })
+
+    return Promise.reject(appError)
   }
 )
 

@@ -31,6 +31,7 @@ export const useAuthStore = create<AuthState & AuthActions>()(
       isAuthenticated: false,
       isLoading: false,
       error: null,
+      _isInitializing: false,
 
       // Actions
       login: async (credentials: LoginRequest) => {
@@ -152,13 +153,20 @@ export const useAuthStore = create<AuthState & AuthActions>()(
       },
 
       initialize: async () => {
+        const state = get()
+
+        // Prevent multiple simultaneous initializations
+        if (state._isInitializing || state.isAuthenticated) {
+          return
+        }
+
         try {
-          set({ isLoading: true })
+          set({ isLoading: true, _isInitializing: true })
 
           const storedTokens = authService.getStoredTokens()
 
           if (!storedTokens?.accessToken) {
-            set({ isLoading: false })
+            set({ isLoading: false, _isInitializing: false })
             return
           }
 
@@ -171,6 +179,7 @@ export const useAuthStore = create<AuthState & AuthActions>()(
               tokens: storedTokens,
               isAuthenticated: true,
               isLoading: false,
+              _isInitializing: false,
             })
           } else if (storedTokens.refreshToken && !authService.isTokenExpired(storedTokens.refreshToken)) {
             // Access token expired but refresh token is valid
@@ -180,15 +189,16 @@ export const useAuthStore = create<AuthState & AuthActions>()(
               user,
               isAuthenticated: true,
               isLoading: false,
+              _isInitializing: false,
             })
           } else {
             // Both tokens expired
             get().logout()
-            set({ isLoading: false })
+            set({ isLoading: false, _isInitializing: false })
           }
         } catch (error) {
           get().logout()
-          set({ isLoading: false })
+          set({ isLoading: false, _isInitializing: false })
         }
       },
     }),

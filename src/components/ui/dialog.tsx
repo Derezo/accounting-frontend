@@ -106,6 +106,67 @@ const DialogDescription = React.forwardRef<
 ))
 DialogDescription.displayName = DialogPrimitive.Description.displayName
 
+const ConfirmDialog = React.forwardRef<
+  React.ElementRef<typeof Dialog>,
+  {
+    open: boolean
+    onClose: () => void
+    onConfirm: () => void
+    title: string
+    description: string
+    confirmText?: string
+    cancelText?: string
+    variant?: 'default' | 'destructive'
+  }
+>(({
+  open,
+  onClose,
+  onConfirm,
+  title,
+  description,
+  confirmText = 'Confirm',
+  cancelText = 'Cancel',
+  variant = 'default'
+}, ref) => {
+  const handleConfirm = () => {
+    onConfirm()
+    onClose()
+  }
+
+  return (
+    <Dialog open={open} onOpenChange={onClose}>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle>{title}</DialogTitle>
+          <DialogDescription>{description}</DialogDescription>
+        </DialogHeader>
+        <DialogFooter>
+          <button
+            type="button"
+            onClick={onClose}
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+          >
+            {cancelText}
+          </button>
+          <button
+            type="button"
+            onClick={handleConfirm}
+            className={cn(
+              "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2",
+              variant === 'destructive'
+                ? "bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                : "bg-primary text-primary-foreground hover:bg-primary/90"
+            )}
+          >
+            {confirmText}
+          </button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  )
+})
+ConfirmDialog.displayName = "ConfirmDialog"
+
 export {
   Dialog,
   DialogPortal,
@@ -117,4 +178,5 @@ export {
   DialogFooter,
   DialogTitle,
   DialogDescription,
+  ConfirmDialog,
 }
