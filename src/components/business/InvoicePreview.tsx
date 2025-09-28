@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import DOMPurify from 'dompurify'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -380,7 +381,7 @@ export function InvoicePreview({
               <div
                 ref={previewRef}
                 className="border rounded-lg bg-white p-8 shadow-sm"
-                dangerouslySetInnerHTML={{ __html: generatePreviewHTML() }}
+                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(generatePreviewHTML()) }}
               />
             </CardContent>
           </Card>
@@ -530,7 +531,7 @@ export function InvoicePreview({
                   <div
                     className="border rounded-lg bg-white p-4 shadow-sm max-h-96 overflow-y-auto"
                     style={{ transform: 'scale(0.7)', transformOrigin: 'top left', width: '142.86%' }}
-                    dangerouslySetInnerHTML={{ __html: generatePreviewHTML() }}
+                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(generatePreviewHTML()) }}
                   />
                 </CardContent>
               </Card>

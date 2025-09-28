@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { renderHook } from '@testing-library/react'
 import { useAuth } from '../useAuth'
 import { useAuthStore } from '@/stores/auth.store'
-import { createMockUser, TestProvider } from '@/lib/test-utils'
+import { createMockUser } from '@/lib/test-utils'
 import { UserRole } from '@/types/auth'
 
 describe('useAuth Hook', () => {
@@ -19,7 +19,7 @@ describe('useAuth Hook', () => {
         expected: boolean
       }> = [
         // Super admin can access everything
-        { userRole: 'SUPER_ADMIN', requiredRole: 'READONLY', expected: true },
+        { userRole: 'SUPER_ADMIN', requiredRole: 'VIEWER', expected: true },
         { userRole: 'SUPER_ADMIN', requiredRole: 'ADMIN', expected: true },
 
         // Admin can access lower roles
@@ -31,26 +31,24 @@ describe('useAuth Hook', () => {
         { userRole: 'MANAGER', requiredRole: 'EMPLOYEE', expected: true },
         { userRole: 'MANAGER', requiredRole: 'ADMIN', expected: false },
 
+        // Accountant permissions
+        { userRole: 'ACCOUNTANT', requiredRole: 'EMPLOYEE', expected: true },
+        { userRole: 'ACCOUNTANT', requiredRole: 'MANAGER', expected: false },
+
         // Employee permissions
         { userRole: 'EMPLOYEE', requiredRole: 'EMPLOYEE', expected: true },
         { userRole: 'EMPLOYEE', requiredRole: 'MANAGER', expected: false },
 
-        // Contractor permissions
-        { userRole: 'CONTRACTOR', requiredRole: 'READONLY', expected: true },
-        { userRole: 'CONTRACTOR', requiredRole: 'EMPLOYEE', expected: false },
-
-        // Readonly permissions
-        { userRole: 'READONLY', requiredRole: 'READONLY', expected: true },
-        { userRole: 'READONLY', requiredRole: 'CONTRACTOR', expected: false },
+        // Viewer permissions
+        { userRole: 'VIEWER', requiredRole: 'VIEWER', expected: true },
+        { userRole: 'VIEWER', requiredRole: 'EMPLOYEE', expected: false },
       ]
 
       testCases.forEach(({ userRole, requiredRole, expected }) => {
         const user = createMockUser({ role: userRole })
         useAuthStore.getState().setUser(user)
 
-        const { result } = renderHook(() => useAuth(), {
-          wrapper: TestProvider,
-        })
+        const { result } = renderHook(() => useAuth())
 
         expect(result.current.hasRole(requiredRole)).toBe(expected)
       })
@@ -107,8 +105,27 @@ describe('useAuth Hook', () => {
           'payments:write',
           'analytics:read',
         ],
-        expectedTrue: ['customers:write', 'invoices:write', 'analytics:read'],
+        expectedTrue: ['customers:write', 'quotes:write', 'analytics:read'],
         expectedFalse: ['customers:delete', 'users:write'],
+      },
+      {
+        role: 'ACCOUNTANT' as UserRole,
+        permissions: [
+          'customers:read',
+          'customers:write',
+          'quotes:read',
+          'invoices:read',
+          'invoices:write',
+          'invoices:delete',
+          'payments:read',
+          'payments:write',
+          'payments:delete',
+          'analytics:read',
+          'reports:read',
+          'reports:write',
+        ],
+        expectedTrue: ['invoices:write', 'payments:delete', 'reports:write'],
+        expectedFalse: ['customers:delete', 'users:write', 'quotes:write'],
       },
       {
         role: 'EMPLOYEE' as UserRole,
@@ -124,23 +141,16 @@ describe('useAuth Hook', () => {
         expectedFalse: ['customers:delete', 'payments:write', 'analytics:read'],
       },
       {
-        role: 'CONTRACTOR' as UserRole,
+        role: 'VIEWER' as UserRole,
         permissions: [
           'customers:read',
           'quotes:read',
           'invoices:read',
           'payments:read',
-        ],
-        expectedTrue: ['customers:read', 'quotes:read'],
-        expectedFalse: ['customers:write', 'quotes:write', 'analytics:read'],
-      },
-      {
-        role: 'READONLY' as UserRole,
-        permissions: [
-          'customers:read',
-          'quotes:read',
-          'invoices:read',
-          'payments:read',
+          'projects:read',
+          'appointments:read',
+          'analytics:read',
+          'reports:read',
         ],
         expectedTrue: ['customers:read', 'invoices:read'],
         expectedFalse: ['customers:write', 'quotes:write', 'payments:write'],
@@ -156,9 +166,7 @@ describe('useAuth Hook', () => {
 
         if (role === 'SUPER_ADMIN') {
           it('should have all permissions', () => {
-            const { result } = renderHook(() => useAuth(), {
-              wrapper: TestProvider,
-            })
+            const { result } = renderHook(() => useAuth())
 
             // Test a variety of permissions
             const testPermissions = [
@@ -175,9 +183,7 @@ describe('useAuth Hook', () => {
           })
         } else {
           it(`should have correct permissions for ${role}`, () => {
-            const { result } = renderHook(() => useAuth(), {
-              wrapper: TestProvider,
-            })
+            const { result } = renderHook(() => useAuth())
 
             // Test permissions that should be true
             expectedTrue?.forEach((permission) => {
@@ -199,17 +205,15 @@ describe('useAuth Hook', () => {
       const user = createMockUser({ role: 'MANAGER' })
       useAuthStore.getState().setUser(user)
 
-      const { result } = renderHook(() => useAuth(), {
-        wrapper: TestProvider,
-      })
+      const { result } = renderHook(() => useAuth())
 
       // Manager can read/write customers but not delete
       expect(result.current.canAccess('customers', 'read')).toBe(true)
       expect(result.current.canAccess('customers', 'write')).toBe(true)
       expect(result.current.canAccess('customers', 'delete')).toBe(false)
 
-      // Manager cannot write users
-      expect(result.current.canAccess('users', 'read')).toBe(false)
+      // Manager can read users but not write
+      expect(result.current.canAccess('users', 'read')).toBe(true)
       expect(result.current.canAccess('users', 'write')).toBe(false)
     })
 
@@ -217,9 +221,7 @@ describe('useAuth Hook', () => {
       const user = createMockUser({ role: 'EMPLOYEE' })
       useAuthStore.getState().setUser(user)
 
-      const { result } = renderHook(() => useAuth(), {
-        wrapper: TestProvider,
-      })
+      const { result } = renderHook(() => useAuth())
 
       // Should default to read access
       expect(result.current.canAccess('customers')).toBe(true)
@@ -232,11 +234,9 @@ describe('useAuth Hook', () => {
       // Ensure no user is set
       useAuthStore.getState().logout()
 
-      const { result } = renderHook(() => useAuth(), {
-        wrapper: TestProvider,
-      })
+      const { result } = renderHook(() => useAuth())
 
-      expect(result.current.hasRole('READONLY')).toBe(false)
+      expect(result.current.hasRole('VIEWER')).toBe(false)
       expect(result.current.hasPermission('customers:read')).toBe(false)
       expect(result.current.canAccess('customers')).toBe(false)
       expect(result.current.isAuthenticated).toBe(false)
@@ -246,9 +246,7 @@ describe('useAuth Hook', () => {
 
   describe('integration with auth store', () => {
     it('should reflect auth store state changes', () => {
-      const { result, rerender } = renderHook(() => useAuth(), {
-        wrapper: TestProvider,
-      })
+      const { result, rerender } = renderHook(() => useAuth())
 
       // Initially unauthenticated
       expect(result.current.isAuthenticated).toBe(false)
@@ -265,9 +263,7 @@ describe('useAuth Hook', () => {
     })
 
     it('should provide all auth store actions', () => {
-      const { result } = renderHook(() => useAuth(), {
-        wrapper: TestProvider,
-      })
+      const { result } = renderHook(() => useAuth())
 
       // Check that all expected actions are available
       expect(typeof result.current.login).toBe('function')
@@ -280,29 +276,24 @@ describe('useAuth Hook', () => {
 
   describe('financial role scenarios', () => {
     it('should handle accountant-specific permissions correctly', () => {
-      // Note: ACCOUNTANT role might be added later, using MANAGER for now
-      const user = createMockUser({ role: 'MANAGER' })
+      const user = createMockUser({ role: 'ACCOUNTANT' })
       useAuthStore.getState().setUser(user)
 
-      const { result } = renderHook(() => useAuth(), {
-        wrapper: TestProvider,
-      })
+      const { result } = renderHook(() => useAuth())
 
       // Accountant should be able to handle financial data
       expect(result.current.canAccess('invoices', 'read')).toBe(true)
       expect(result.current.canAccess('invoices', 'write')).toBe(true)
       expect(result.current.canAccess('payments', 'read')).toBe(true)
       expect(result.current.canAccess('payments', 'write')).toBe(true)
-      expect(result.current.canAccess('analytics', 'read')).toBe(true)
+      expect(result.current.canAccess('reports', 'read')).toBe(true)
     })
 
     it('should restrict sensitive operations appropriately', () => {
       const user = createMockUser({ role: 'EMPLOYEE' })
       useAuthStore.getState().setUser(user)
 
-      const { result } = renderHook(() => useAuth(), {
-        wrapper: TestProvider,
-      })
+      const { result } = renderHook(() => useAuth())
 
       // Employee should not be able to delete financial records
       expect(result.current.canAccess('invoices', 'delete')).toBe(false)

@@ -34,9 +34,9 @@ export const testUsers = {
   superAdmin: createUserByRole('SUPER_ADMIN'),
   admin: createUserByRole('ADMIN'),
   manager: createUserByRole('MANAGER'),
+  accountant: createUserByRole('ACCOUNTANT'),
   employee: createUserByRole('EMPLOYEE'),
-  contractor: createUserByRole('CONTRACTOR'),
-  readonly: createUserByRole('READONLY'),
+  viewer: createUserByRole('VIEWER'),
 }
 
 // Auth store helpers for testing
@@ -61,7 +61,7 @@ interface TestProviderProps {
 
 export const TestProvider = ({
   children,
-  user = testUsers.employee,
+  user = null, // Changed default to null to avoid automatic authentication
   queryClient,
   initialRoute = '/'
 }: TestProviderProps) => {
